@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <Link to="/glamping">Glamping</Link>
+      <Link to="/restaurante">restaurante</Link>
+    </div>
   )
 }
 
