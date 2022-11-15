@@ -8,22 +8,29 @@ nav a{
   text-decoration: none;
   font-size: 17px;
 }
+/* footer */
+footer{
+  padding: 20px ;
+  display: flex;
+  background-color: #4e4b4b;
+}
+footer div{
+  margin: 0px auto 0px auto;
+}
+footer .redes{
+  display: flex;
+}
+.redes li{
+  margin: auto;
+}
+footer li{
+  list-style: none;
+}
 @media screen and (max-width: 600px) {
-  nav a:not(:first-child) {display: none;}
-  nav i {
-    float: right;
+  footer {
     display: block;
-  }
-  .responsive {position: relative;}
-  .responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
   }
 }
 
