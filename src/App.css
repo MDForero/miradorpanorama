@@ -28,23 +28,30 @@ footer li{
   list-style: none;
 }
 /*  inicio paginas principales */
+.general{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 #inicio{
   background: url("Panorama/188815862_1002804597133915_8165767116799593427_n.jpg") no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 100vh;
 }
 #aboutus{
-  background: url("Panorama/188815862_1002804597133915_8165767116799593427_n.jpg");
+  background: url("Panorama/bienvenida.jpg") no-repeat;
+  background-position-y: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 70vh;
+  color: white;
+}
+#services{
+  background: url("Panorama/bienvenida.jpg") no-repeat;
+  background-position-y:center ;
+  background-size: cover;
+  height: 70vh;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
