@@ -1,5 +1,8 @@
 
 /* Nav */
+a{
+  text-decoration: none;
+}
 nav a{
   float: left;
   display: block;
@@ -53,7 +56,20 @@ footer li{
   height: 70vh;
   color: white;
 }
-
+/* Sección central*/
+.center{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#servicios{
+  display: inline-flex;
+  margin: auto;
+}
+#servicios a{
+  margin: 0px 60px;
+}
 @media screen and (max-width: 600px) {
   footer {
     display: block;
