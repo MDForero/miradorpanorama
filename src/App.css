@@ -10,6 +10,7 @@ nav a{
 }
 /* footer */
 footer{
+  color:white;
   padding: 20px ;
   display: flex;
   background-color: #4e4b4b;
@@ -26,6 +27,26 @@ footer .redes{
 footer li{
   list-style: none;
 }
+/*  inicio paginas principales */
+#inicio{
+  background: url("Panorama/188815862_1002804597133915_8165767116799593427_n.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+#aboutus{
+  background: url("Panorama/188815862_1002804597133915_8165767116799593427_n.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+}
+
 @media screen and (max-width: 600px) {
   footer {
     display: block;

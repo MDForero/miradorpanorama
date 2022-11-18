@@ -1,6 +1,7 @@
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -8,27 +9,27 @@ const Footer = () => {
             <div >
                 <h4>!Síguenos en nuestras redes¡</h4>
                 <ul className="redes">
-                    <li><a><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
-                    <li><a><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
-                    <li><a><FontAwesomeIcon icon={faWhatsapp} size="2x" /></a></li>
+                    <li><a href='' className='nav-link'><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
+                    <li><a href='' className='nav-link'><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
+                    <li><a href='' className='nav-link'><FontAwesomeIcon icon={faWhatsapp} size="2x" /></a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><a>Restaurante</a></li>
-                    <li><a>Glamping</a></li>
-                    <li><a>Misión</a></li>
-                    <li><a>Visión</a></li>
-                    <li><a>Galería</a></li>
-                    <li><a>Menú</a></li>
+                    <li><Link to="restaurante" className='nav-link'>Restaurante</Link></li>
+                    <li><Link to="glamping" className='nav-link'>Glamping</Link></li>
+                    <li><a href='' className='nav-link'>Misión</a></li>
+                    <li><a href='' className='nav-link'>Visión</a></li>
+                    <li><a href='' className='nav-link'>Galería</a></li>
+                    <li><a href='' className='nav-link'>Menú</a></li>
                 </ul>
             </div>
             <div>
 
                 <ul>
-                    <li><a>Políticas de privacidad </a></li>
-                    <li><a>Aviso Legal</a></li>
-                    <li><a>Acerca de las Cookies</a></li>
+                    <li><a href='' className='nav-link'>Políticas de privacidad </a></li>
+                    <li><a href='' className='nav-link'>Aviso Legal</a></li>
+                    <li><a href='' className='nav-link'>Acerca de las Cookies</a></li>
                 </ul>
             </div>
             <div>
