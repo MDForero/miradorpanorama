@@ -9,19 +9,19 @@ const Footer = () => {
             <div >
                 <h4>!Síguenos en nuestras redes¡</h4>
                 <ul className="redes">
-                    <li><a href='' className='nav-link'><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
-                    <li><a href='' className='nav-link'><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
-                    <li><a href='' className='nav-link'><FontAwesomeIcon icon={faWhatsapp} size="2x" /></a></li>
+                    <li><a href='https://www.facebook.com/elmiradorpanorama' target="_blank" className='nav-link'><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
+                    <li><a href='https://www.instagram.com/elmiradorpanorama/' target="_blank" className='nav-link'><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
+                    <li><a href='wa.me/+573219251480' className='nav-link' target="_blank"><FontAwesomeIcon icon={faWhatsapp} target="_blank" size="2x" /></a></li>
                 </ul>
             </div>
             <div>
                 <ul>
                     <li><Link to="restaurante" className='nav-link'>Restaurante</Link></li>
                     <li><Link to="glamping" className='nav-link'>Glamping</Link></li>
-                    <li><a href='' className='nav-link'>Misión</a></li>
-                    <li><a href='' className='nav-link'>Visión</a></li>
-                    <li><a href='' className='nav-link'>Galería</a></li>
-                    <li><a href='' className='nav-link'>Menú</a></li>
+                    <li><Link to='' className='nav-link'>Misión</Link></li>
+                    <li><Link to='' className='nav-link'>Visión</Link></li>
+                    <li><Link to='' className='nav-link'>Galería</Link></li>
+                    <li><Link to='restaurante/menu' className='nav-link'>Menú</Link></li>
                 </ul>
             </div>
             <div>
