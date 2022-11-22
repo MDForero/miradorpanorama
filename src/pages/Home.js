@@ -13,46 +13,46 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
       </main>
-      <section className='center'>
+      <section className='center' id="galeria">
         <div>
-          <h3>Carrousel</h3>
-          <div><Carousel fade>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={img1}
-                alt="First slide"
-                height="400px"
-              />
-              <Carousel.Caption>
-                
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={img2}
-                alt="Second slide"
-                height="400px"
-              />
+          <div>
+            <Carousel fade>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={img1}
+                  alt="First slide"
+                  height="400px"
+                />
+                <Carousel.Caption>
 
-              <Carousel.Caption>
-               
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={img3}
-                alt="Third slide"
-                height="400px"
-              />
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={img2}
+                  alt="Second slide"
+                  height="400px"
+                />
 
-              <Carousel.Caption>
-               
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel></div>
+                <Carousel.Caption>
+
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={img3}
+                  alt="Third slide"
+                  height="400px"
+                />
+
+                <Carousel.Caption>
+
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel></div>
         </div>
       </section>
     </div>
