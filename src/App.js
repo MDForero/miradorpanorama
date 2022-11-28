@@ -9,6 +9,7 @@ import Glamping from './pages/servicios/Glamping';
 import Restaurant from './pages/servicios/Restaurant';
 import Menu from './pages/servicios/restaurant/Menu';
 import Reservas from './pages/servicios/reservas/Reservas';
+import Inicio from './pages/servicios/restaurant/Inicio';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='reservas' element={<Reservas/>}/>
         </Route>
         <Route path='restaurante' element={<Restaurant />}>
+          <Route index element={<Inicio/>} />
           <Route path='menu' element={<Menu/>}/>
         </Route>
         <Route path="/" element={<Layout />}>

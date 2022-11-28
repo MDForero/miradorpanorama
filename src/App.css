@@ -1,9 +1,9 @@
-
 /* Nav */
-a{
+a {
   text-decoration: none;
 }
-nav a{
+
+nav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -11,101 +11,213 @@ nav a{
   text-decoration: none;
   font-size: 17px;
 }
+
 /* footer */
-footer{
-  color:white;
-  padding: 20px ;
+footer {
+  color: white;
+  padding: 20px;
   display: flex;
   background-color: #4e4b4b;
 }
-footer div{
+
+footer div {
   margin: 0px auto 0px auto;
 }
-footer .redes{
+
+footer .redes {
   display: flex;
 }
-.redes li{
+
+.redes li {
   margin: auto;
 }
-footer li{
+
+footer li {
   list-style: none;
 }
+
 /*  inicio paginas principales */
-.general{
+.preview {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-#inicio{
+
+#inicio {
   background: url("Panorama/188815862_1002804597133915_8165767116799593427_n.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
-#aboutus{
+
+#aboutus {
   background: url("Panorama/bienvenida.jpg") no-repeat;
   background-position-y: center;
   background-size: cover;
   height: 70vh;
   color: white;
 }
-#services{
+
+#services {
   background: url("Panorama/bienvenida.jpg") no-repeat;
-  background-position-y:center ;
+  background-position-y: center;
   background-size: cover;
   height: 70vh;
   color: white;
 }
+
+#restaurante {
+  background: url("Panorama/original.jpg") no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: white;
+}
+
 /* Sección central*/
-.center{
+.center {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   min-height: 70vh;
+  width: 100%;
   align-items: center;
 }
-#servicios{
+/* Nosotros */
+#mision{
+  
+}
+
+/* servicios */
+#servicios {
   display: inline-flex;
   margin: auto;
 }
-#servicios a{
-  margin: 0px 60px;
+
+#servicios a {
+  margin: 60px 60px 0px;
 }
-.cardicon{
+
+
+.figure {
+
+  display: grid;
+  grid-template: 1fr/1fr;
+  grid-template-areas: "img";
+  max-width: 500px;
+  margin: 60px;
+}
+
+
+.img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+}
+
+#glampingimg::after {
+  content: "Glamping";
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(201, 57, 71, 0.66);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  clip-path: circle(150% at top right);
+  transition: clip-path .4s;
+}
+
+#glampingimg:hover::after {
+  clip-path: circle(0 at top right);
+}
+
+#restauranteimg::after {
+  content: "Restaurante";
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(177, 173, 174, 0.423);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  clip-path: circle(150% at top right);
+  transition: clip-path .4s;
+}
+
+#restauranteimg:hover::after {
+  clip-path: circle(0 at top right);
+}
+
+/* Restaurante */
+.platos {
+  display: flex;
+  height: 100vh;
+  background-color: #FFAE6D;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.platos:nth-child(even) {
+  background-color: #E3C770;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.info {
+  max-width: 400px;
+  font-size: x-large;
+}
+
+.cardicon {
   display: flex;
   width: 80%;
   justify-content: center;
   align-items: center;
-  
 }
-.container{
-  width:95%;
+
+.container {
+  width: 95%;
 }
+
 /* #mision{
   height: 70vh;
 }
 #vision{
   height: 70vh;
 } */
-.area{
+.area {
   display: block;
   text-align: center;
   max-width: 90%;
 }
-.inline{
+
+.inline {
   display: inline-flex;
 }
+
+
+
 @media screen and (max-width: 600px) {
-  .container{
+  .container {
     margin: 10%;
   }
-  .block{
+
+  .block {
     display: block;
     text-align: center;
   }
+
   footer {
     display: block;
     justify-content: center;
     align-items: center;
   }
 }
-

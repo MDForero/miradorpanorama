@@ -6,7 +6,7 @@ import mision from "../Panorama/188815862_1002804597133915_8165767116799593427_n
 const AboutUs = () => {
   return (
     <div>
-      <main className='general' id="aboutus">
+      <main className='preview' id="aboutus">
         <div>
           <h1>Nosotros</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
