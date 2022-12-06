@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import Footer from './Footer'
 
 const Layout = () => {
@@ -13,9 +13,9 @@ const Layout = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link ><Link to="/">Inicio</Link></Nav.Link>
-                            <Nav.Link ><Link to="nosotros">Nosotros</Link></Nav.Link>
-                            <Nav.Link ><Link to="servicios">Servicios</Link></Nav.Link>
+                            <NavLink className="nav-link" to="/">Inicio</NavLink>
+                            <NavLink className="nav-link" to="nosotros">Nosotros</NavLink>
+                            <NavLink className="nav-link" to="servicios">Servicios</NavLink>
 
                         </Nav>
                     </Navbar.Collapse>
