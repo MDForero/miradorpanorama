@@ -8,7 +8,7 @@ const Itemstore = ({ data }) => {
             <Card.Header>
                 <Card.Title>{nombre}</Card.Title>
             </Card.Header>
-            <Card.Img src={img} variant="top" width="200px" height="200px"/>
+            <Card.Img src={img} variant="top" width="200px" height="200px" style={{objectFit:"cover"}}/>
             <Card.Body>
                 <Card.Text>
                     <p>{descripcion}</p>

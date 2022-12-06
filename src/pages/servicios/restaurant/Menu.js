@@ -7,11 +7,9 @@ import data from "../../../data/menu"
 const Menu = () => {
   return (
     <div>
-      <Container>
-        
-          {data.map((element)=><Itemstore data={element} />)}
-        
-      </Container>
+      <section className="wrapper">
+          {data.map((element)=><Itemstore data={element} />)}        
+      </section>
         
     </div>
   )

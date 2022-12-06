@@ -7,7 +7,7 @@ const Inicio = () => {
       <main className='preview' id="restaurante">
         <h1>Restaurante</h1>
       </main>
-      <section>
+      <section style={{textAlign:"justify"}}>
 
         <article className='platos'>
           <figure>
