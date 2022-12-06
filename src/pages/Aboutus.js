@@ -116,9 +116,9 @@ const AboutUs = () => {
             <div class="face face2">
               <div class="content">
                 <h3>
-                  <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                  <a href="" target="_blank">Lorem</a>
                 </h3>
-                <p>This is where I network and build my professional protfolio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -133,9 +133,9 @@ const AboutUs = () => {
             <div class="face face2">
               <div class="content">
                 <h3>
-                  <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+                  <a href="" target="_blank">Lorem</a>
                 </h3>
-                <p>This is where I read news and network with different social groups.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -150,9 +150,9 @@ const AboutUs = () => {
             <div class="face face2">
               <div class="content">
                 <h3>
-                  <a href="https://github.com/atom888" target="_blank">atom888</a>
+                  <a href="" target="_blank">Lorem</a>
                 </h3>
-                <p>This is where I share code and work on projects.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -167,9 +167,9 @@ const AboutUs = () => {
             <div class="face face2">
               <div class="content">
                 <h3>
-                  <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                  <a href="" target="_blank">Lorem</a>
                 </h3>
-                <p>This is where I network and build my professional protfolio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -184,9 +184,9 @@ const AboutUs = () => {
             <div class="face face2">
               <div class="content">
                 <h3>
-                  <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+                  <a href="" target="_blank">Lorem</a>
                 </h3>
-                <p>This is where I read news and network with different social groups.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -201,9 +201,9 @@ const AboutUs = () => {
             <div class="face face2">
               <div class="content">
                 <h3>
-                  <a href="https://github.com/atom888" target="_blank">atom888</a>
+                  <a href="" target="_blank">Lorem</a>
                 </h3>
-                <p>This is where I share code and work on projects.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>

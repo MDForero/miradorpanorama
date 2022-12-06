@@ -1,11 +1,14 @@
 /* Nav */
+a{
+  text-decoration: none;
+}
 .nav-link{
   color: white;
 }
 .active{
   border-radius: 2px;
   background-color: white;
-  
+
 }
 
 nav a {
@@ -241,8 +244,10 @@ footer li {
 
 .container-card {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap:10px
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) ;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-card .card {
@@ -369,6 +374,7 @@ footer li {
 }
 
 @media screen and (max-width: 600px) {
+  
   .platos {
     display: flex;
     flex-direction: column;
