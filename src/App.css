@@ -236,7 +236,7 @@ footer li {
 
 .wrapper {
   width: 95%;
-  margin: 0 auto;
+  margin: 15px auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
@@ -299,6 +299,59 @@ footer li {
   font-size: 80px;
   transition: 0.7s;
   color: #fff;
+}
+.category{
+  min-height: 60vh;
+  background-position: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#especiales{
+  background: url("./Panorama/categoriaEspeciales.png") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#especiales::after{
+  content: "especiales";
+  color: black;
+  font-size: 60px;
+  background-color: #a2cd46c0;
+}
+#patacones{
+  background: url("./Panorama/categoriaPatacones.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#patacones::after{
+  content: "Patacones";
+  color: black;
+  font-size: 60px;
+  background-color: #a2cd46c0;
+}
+#sandiwch{
+  background: url("./Panorama/categoriaSandiwch.png") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#sandiwch::after{
+  content: "Sandiwch";
+  color: black;
+  font-size: 60px;
+  background-color: #a2cd46c0;
+}
+#entradas{
+  background: url("./Panorama/categoriaEntradas.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+ 
+}
+#entradas::after{
+  content: "Entradas";
+  color: black;
+  font-size: 60px;
+  background-color: #a2cd46c0;
+  border-radius: 10px;
 }
 
 .i {
