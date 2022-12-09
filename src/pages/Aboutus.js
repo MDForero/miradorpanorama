@@ -1,15 +1,15 @@
-import { faGlassCheers, faHotel, faMartiniGlass, faMountain, faPlateWheat, faUtensils, faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
+import { faGlassCheers, faHotel, faMartiniGlass, faMountain, faPeopleGroup, faPlateWheat, faUtensils, faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import mision from "../Panorama/188815862_1002804597133915_8165767116799593427_n.jpg"
+import logo from "../Panorama/logo.png"
 
 const AboutUs = () => {
   return (
     <div>
       <main className='preview' id="aboutus">
         <div>
-          <h1>Nosotros</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <img src={logo} alt="el Mirador panorama" width="400px"/>
         </div>
       </main>
       <section style={{ textAlign: "justify" }}>
@@ -122,40 +122,8 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <span className="i"><FontAwesomeIcon icon={faGlassCheers} /></span>
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="" target="_blank">Lorem</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <span className="i"><FontAwesomeIcon icon={faMartiniGlass} /></span>
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="" target="_blank">Lorem</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
+          
+         
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -177,7 +145,41 @@ const AboutUs = () => {
             <div class="face face1">
               <div class="content">
                 <div class="icon">
-                  <span className="i"><FontAwesomeIcon icon={faPlateWheat} /></span>
+                  <span className="i"><FontAwesomeIcon icon={faPeopleGroup}  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a href="" target="_blank">Lorem</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <span className="i"><FontAwesomeIcon icon={faGlassCheers} /></span>
+                </div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a href="" target="_blank">Lorem</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon">
+                  <span className="i"><FontAwesomeIcon icon={faMartiniGlass} /></span>
                 </div>
               </div>
             </div>

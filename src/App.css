@@ -278,6 +278,17 @@ footer li {
 .container-card .card:nth-child(3) .icon {
   background: #4aada9;
 }
+.container-card .card:nth-child(4) .icon {
+  background: #8f3990;
+}
+
+.container-card .card:nth-child(5) .icon {
+  background: #ffcc29;
+}
+
+.container-card .card:nth-child(6) .icon {
+  background: #a3cd46;
+}
 
 
 .container-card .card .icon .fa {
