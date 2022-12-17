@@ -10,6 +10,8 @@ import Restaurant from './pages/servicios/Restaurant';
 import Menu from './pages/servicios/restaurant/Menu';
 import Reservas from './pages/servicios/reservas/Reservas';
 import Inicio from './pages/servicios/restaurant/Inicio';
+import Contacto from './pages/Contacto';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="nosotros" element={<AboutUs />}/>
           <Route path='servicios' element={<Services />}/>
+          <Route path="contacto" element={<Contacto/>}/>
         </Route>
       </Routes>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, CardGroup, Container } from 'react-bootstrap'
 import Footer from '../../../components/Footer'
 import Itemstore from '../../../components/Itemstore'
-import data from "../../../Panorama/menu"
+import data from "../../../images/menu"
 
 const Menu = () => {
   return (

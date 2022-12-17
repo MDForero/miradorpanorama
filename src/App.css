@@ -53,34 +53,67 @@ footer li {
 }
 
 #inicio {
-  background: url("Panorama/188815862_1002804597133915_8165767116799593427_n.jpg") no-repeat;
+  background: url("images/188815862_1002804597133915_8165767116799593427_n.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
 #aboutus {
-  background: url("Panorama/bienvenida.jpg") no-repeat;
+  background: url("images/galeria/compressed__DSC8506.jpg") no-repeat;
   background-position-y: center;
   background-size: cover;
   height: 70vh;
-  color: white;
 }
 
 #services {
-  background: url("Panorama/bienvenida.jpg") no-repeat;
+  background: url("images/galeria/compressed__DSC8517.jpg") no-repeat;
   background-position-y: center;
   background-size: cover;
   height: 70vh;
-  color: white;
 }
 
 #restaurante {
-  background: url("Panorama/original.jpg") no-repeat;
+  background: url("images/original.jpg") no-repeat;
   background-size: cover;
   height: 70vh;
-  color: white;
 }
-
+#contact{
+  height: 70vh;
+  background: url("images/galeria/compressed__DSC8533.jpg") no-repeat;
+  background-size: cover;
+  background-position-y:25% ;
+}
+.grid-contact{
+  margin: 20px auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: space-around;
+  gap: 20px;
+}
+.card-contact{
+  margin: 0px auto;
+  text-align: center;
+  color:black;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-contact:nth-child(1){
+  background-color: #ffcd2969;
+  border: solid #ffcc29; 
+}
+.card-contact:nth-child(2){
+  background-color: #a2cd4675;
+  border: solid #a3cd46;
+}
+.card-contact:nth-child(3){
+  background-color: #ed323865;
+  border: solid #ed3237;
+}
+.map{
+  width: 95%;
+  margin: 20px auto
+}
 /* Sección central*/
 .center {
   display: flex;
@@ -233,13 +266,19 @@ footer li {
 .inline {
   display: inline-flex;
 }
+#galeria{
+  height: 500px;
+  overflow: hidden;
+  margin: 20px auto;
+}
 
 .wrapper {
   width: 95%;
   margin: 15px auto;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-rows: min-content
 }
 
 .container-card {
@@ -308,7 +347,7 @@ footer li {
   align-items: center;
 }
 #especiales{
-  background: url("./Panorama/categoriaEspeciales.png") no-repeat;
+  background: url("./images/categoriaEspeciales.png") no-repeat;
   background-size: cover;
   background-position: 50%;
 }
@@ -319,7 +358,7 @@ footer li {
   background-color: #a2cd46c0;
 }
 #patacones{
-  background: url("./Panorama/categoriaPatacones.jpg") no-repeat;
+  background: url("./images/categoriaPatacones.jpg") no-repeat;
   background-size: cover;
   background-position: 50%;
 }
@@ -330,7 +369,7 @@ footer li {
   background-color: #a2cd46c0;
 }
 #sandiwch{
-  background: url("./Panorama/categoriaSandiwch.png") no-repeat;
+  background: url("./images/categoriaSandiwch.png") no-repeat;
   background-size: cover;
   background-position: 50%;
 }
@@ -341,7 +380,7 @@ footer li {
   background-color: #a2cd46c0;
 }
 #entradas{
-  background: url("./Panorama/categoriaEntradas.jpg") no-repeat;
+  background: url("./images/categoriaEntradas.jpg") no-repeat;
   background-size: cover;
   background-position: 50%;
  
@@ -468,7 +507,6 @@ footer li {
   }
 
   .container {
-    margin: 10%;
   }
 
   .block {

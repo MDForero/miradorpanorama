@@ -1,15 +1,15 @@
 import { faGlassCheers, faHotel, faMartiniGlass, faMountain, faPeopleGroup, faPlateWheat, faUtensils, faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import mision from "../Panorama/188815862_1002804597133915_8165767116799593427_n.jpg"
-import logo from "../Panorama/logo.png"
+import mision from "../images/188815862_1002804597133915_8165767116799593427_n.jpg"
+import logo from "../images/logo.png"
 
 const AboutUs = () => {
   return (
     <div>
       <main className='preview' id="aboutus">
         <div>
-          <img src={logo} alt="el Mirador panorama" width="400px"/>
+          <img src={logo} alt="el Mirador panorama" width="40%"/>
         </div>
       </main>
       <section style={{ textAlign: "justify" }}>

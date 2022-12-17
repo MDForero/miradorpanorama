@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 
 const Itemstore = ({ data }) => {
     const { nombre, descripcion, valor, img } = data
@@ -8,22 +8,25 @@ const Itemstore = ({ data }) => {
             <Card.Header>
                 <Card.Title>{nombre}</Card.Title>
             </Card.Header>
-            <Card.Img src={img} variant="top" style={{objectFit:"cover"}}/>
-            <Card.Body>
+            <Card.Body style={{ display: "grid", justifyContent: "space-around", gridTemplateColumns:"1fr 1fr 1fr", gap:"10px" }}>
+                <div style={{width:"100px"}}>
+                    <Card.Img src={img} variant="top" style={{ objectFit: "cover", width:"100%" }} />
+                </div>
                 <Card.Text>
                     <p>{descripcion}</p>
                 </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-                {typeof valor === "object" ? valor.map(({ descripcion, value }) => <div>
-                    <p>{descripcion}</p>
-                    <p>{value}</p>
+                <div>
+
+                    {typeof valor === "object" ? valor.map(({ descripcion, value }) => <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <p>{descripcion}</p>
+                        <Button variant="danger">{value}</Button>
+                    </div>
+                    ) :
+                        <div>
+                            <Button variant="danger">{valor}</Button>
+                        </div>}
                 </div>
-                ) :
-                    <div>
-                        <p>{valor}</p>
-                    </div>}
-            </Card.Footer>
+            </Card.Body>
         </Card>
     )
 }
