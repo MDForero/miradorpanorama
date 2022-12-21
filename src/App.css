@@ -210,7 +210,10 @@ footer li {
   justify-content: space-around;
   flex-direction: row-reverse;
 }
-
+.precios{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
 .info {
   max-width: 600px;
   font-size: x-large;
@@ -271,13 +274,18 @@ footer li {
   overflow: hidden;
   margin: 20px auto;
 }
+.item-menu figure{
+  border-radius: 100%;
+  overflow: hidden;
+
+}
 
 .wrapper {
   width: 95%;
   margin: 15px auto;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-template-rows: min-content
 }
 
