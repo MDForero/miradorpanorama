@@ -212,7 +212,7 @@ footer li {
 }
 .precios{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 .info {
   max-width: 600px;
@@ -274,18 +274,28 @@ footer li {
   overflow: hidden;
   margin: 20px auto;
 }
+.item-menu{
+  text-align: center;
+  overflow: hidden;
+  display: grid;
+  gap:1rem
+}
+
 .item-menu figure{
   border-radius: 100%;
   overflow: hidden;
-
+  width: 23rem;
+  height: 23rem;
+  margin: 0px auto;
 }
+
 
 .wrapper {
   width: 95%;
   margin: 15px auto;
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   grid-template-rows: min-content
 }
 
@@ -482,6 +492,20 @@ footer li {
 .container-card a {
   text-decoration: none;
   color: #414141;
+}
+.cart{
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+.cart div{
+  color:aliceblue;
+  position: absolute;
+  right: 1%;
+  top: -15%;
+  background-color: red;
+  padding:0px 5px 0px 5px; 
+  border-radius: 100%
 }
 
 @media screen and (max-width: 600px) {

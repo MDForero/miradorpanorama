@@ -21,6 +21,7 @@ import  pataconesVeganos from "./pataconesVeganos.jpg"
 export default [
     {
         img:nachos,
+        id:1,
         nombre: "Nachos con carne",
         categoria:"especiales",
         descripcion: "Nachos con carne molida, pollo y queso",
@@ -38,6 +39,7 @@ export default [
     {
         img:patacones,
         categoria:"entradas",
+        id:2,
         nombre: "Patacones sencillos",
         descripcion: "patacones, guacamole y hogao.",
         valor: 7000
@@ -45,6 +47,7 @@ export default [
     {
         img:chunchulla,
         categoria:"entradas",
+        id:3,
         nombre: "Chunchullo crocante",
         descripcion: "Chunchullo, papa criolla o patacones.",
         valor: 15000
@@ -52,6 +55,7 @@ export default [
     {
         img:papas,
         categoria:"entradas",
+        id:4,
         nombre: "Papas criollas",
         descripcion: "Papas queso y tocineta.",
         valor: 10000
@@ -59,6 +63,7 @@ export default [
     {
         img:hamburguesitas,
         categoria:"entradas",
+        id:32,
         nombre: "Mini hamburguesas",
         descripcion: "Mini hamburguesas x2 queso y tocineta.",
         valor: 15000
@@ -66,6 +71,7 @@ export default [
     {
         img:gourmet,
         categoria:"sandiwch",
+        id:5,
         nombre: "Sandwich Gourmet",
         descripcion: "200g de carne asada, queso, salsa de la casa, tocineta y vegetales.",
         valor: 20000
@@ -73,6 +79,7 @@ export default [
     {
         img:cerdo,
         categoria:"sandiwch",
+        id:6,
         nombre: "Bondiola de cerdo",
         descripcion: "Cerdo BBQ, maíz, queso, hogao, tocineta y vegetales.",
         valor: 18000
@@ -80,6 +87,7 @@ export default [
     {
         img:turkey,
         categoria:"sandiwch",
+        id:7,
         nombre: "Pollo champiñones",
         descripcion: "Pollo, maíz tierno, queso, tocineta y vegetales.",
         valor: 18000
@@ -87,6 +95,7 @@ export default [
     {
         img:crispy,
         categoria:"sandiwch",
+        id:8,
         nombre: "Pollo crispy",
         descripcion: "Pollo apanado, queso, miel mostaza, tocineta y vegetales.",
         valor: 18000
@@ -94,6 +103,7 @@ export default [
     {
         img:big,
         categoria:"sandiwch",
+        id:9,
         nombre: "Argentino",
         descripcion: "Chorizo, chimichurri, tocineta y vegetales",
         valor: 18000
@@ -101,6 +111,7 @@ export default [
     {
         img:carne,
         categoria:"sandiwch",
+        id:10,
         nombre: "Big",
         descripcion: "Pollo, carne, cerdo, chorizo, maíz tierno, queso, tocineta y vegetales",
         valor: 18000
@@ -108,12 +119,14 @@ export default [
     {
         img:ropaVieja,
         categoria:"sandiwch",
+        id:11,
         nombre: "Ropa vieja",
         descripcion: "Carne desmechada, hogao, queso, tocineta y vegetales",
         valor: 18000
     },
     {
         img:pataconesMaiz,
+        id:12,
         nombre: "Encocado de patacón mixto",
         categoria:"patacones",
         descripcion: "Carne, pollo, cerdo, hogao, maíz y queso",
@@ -130,6 +143,7 @@ export default [
     },
     {
         img:img1,
+        id:13,
         nombre: "Encocado de patacón de carne",
         categoria:"patacones",
         descripcion: "Carne desmechada, hogao y queso",
@@ -146,6 +160,7 @@ export default [
     },
     {
         img:img1,
+        id:14,
         nombre: "Encocado de patacón del huerto ",
         categoria:"patacones",
         descripcion: "Pollo, tocineta, champiñón, maíz y queso",
@@ -162,6 +177,7 @@ export default [
     },
     {
         img:img1,
+        id:15,
         nombre: "Encocado de patacón ranchero",
         categoria:"patacones",
         descripcion: "Chorizo, salsa BBQ, maíz y queso",
@@ -178,6 +194,7 @@ export default [
     },
     {
         img:img1,
+        id:16,
         nombre: "Encocado de patacón pollo BBQ",
         categoria:"patacones",
         descripcion: "pollo, salsa BBQ maíz y queso",
@@ -194,6 +211,7 @@ export default [
     },
     {
         img:img1,
+        id:17,
         nombre: "Encocado de patacón pollo champiñón",
         categoria:"patacones",
         descripcion: "Pollo, champiñones, salsa de la casa, maíz y queso",
@@ -210,6 +228,7 @@ export default [
     },
     {
         img:img1,
+        id:18,
         nombre: "Encocado de patacón pollo miel",
         categoria:"patacones",
         descripcion: "Pollo, miel mostaza, maíz y queso",
@@ -226,6 +245,7 @@ export default [
     },
     {
         img:img1,
+        id:19,
         nombre: "Encocado de patacón california",
         categoria:"patacones",
         descripcion: "Chorizo, carne molida, pimentón, cebolla y queso",
@@ -242,6 +262,7 @@ export default [
     },
     {
         img:img1,
+        id:20,
         nombre: "Encocado de patacón del campo",
         categoria:"patacones",
         descripcion: "Carne molida, tocineta, maíz y queso",
@@ -258,6 +279,7 @@ export default [
     },
     {
         img:img1,
+        id:21,
         nombre: "Encocado de patacón cerdo BBQ",
         categoria:"patacones",
         descripcion: "Cerdo desmechado, salsa BBQ, hogao y queso",
@@ -274,6 +296,7 @@ export default [
     },
     {
         img:img1,
+        id:22,
         nombre: "Encocado de patacón Mexicano",
         categoria:"patacones",
         descripcion: "Carne molida, salsa picante, hogao, maíz y queso",
@@ -290,6 +313,7 @@ export default [
     },
     {
         img:img1,
+        id:23,
         nombre: "Encocado de patacón cerdo agridulce",
         categoria:"patacones",
         descripcion: "Cerdo, hogao, salsa miel mostaza y queso",
@@ -306,6 +330,7 @@ export default [
     },
     {
         img:img1,
+        id:24,
         nombre: "Encocado de patacón de camarones",
         categoria:"patacones",
         descripcion: "Ceviche de camarón",
@@ -322,6 +347,7 @@ export default [
     },
     {
         img:img1,
+        id:33,
         nombre: "Encocado de patacón tocineta y maíz",
         categoria:"patacones",
         descripcion: "Tocineta, maíz, salsa de la casa y queso",
@@ -338,6 +364,7 @@ export default [
     },
     {
         img:img1,
+        id:25,
         nombre: "Encocado de patacón Vegetariana",
         categoria:"patacones",
         descripcion: "Pimentón, cebolla, champiñones, maíz y queso",
@@ -354,6 +381,7 @@ export default [
     },
     {
         img:img1,
+        id:26,
         nombre: "Alitas BBQ-MIELMOSTAZA-HOT",
         categoria:"especiales",
         descripcion: "Alitas, salsa BBQ, mielmostaza",
@@ -374,6 +402,7 @@ export default [
     },
     {
         img:img1,
+        id:27,
         nombre: "Salchipapa ",
         categoria:"especiales",
         descripcion: "Pollo, tocineta, queso y maíz",
@@ -394,6 +423,7 @@ export default [
     },
     {
         img:img1,
+        id:28,
         nombre: "Costillas BBQ",
         categoria:"especiales",
         descripcion: "Costillas, papas a la francesa y ensalada de la casa",
@@ -414,6 +444,7 @@ export default [
     },
     {
         img:img1,
+        id:29,
         nombre: "Pierna pernil",
         categoria:"especiales",
         descripcion: "Pollo, papas a la francesa o criolla, ensalada de la casa",
@@ -421,6 +452,7 @@ export default [
     },
     {
         img:img1,
+        id:30,
         nombre: "Choriperro",
         categoria:"especiales",
         descripcion: "Pan artesanal, chorizo 125g, tocineta, queso fundido, salsa de la casa y papas a la francesa",
@@ -428,6 +460,7 @@ export default [
     },
     {
         img:img1,
+        id:31,
         nombre: "Picada panorama",
         categoria:"especiales",
         descripcion: "Carne asada, morcilla, chorizo ahumado, chunchullo crunch, pollo crispy, papa criolla, patacones, guacamole y hogao ",
