@@ -2,8 +2,10 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useReducer, useState } from 'react'
 import { Button, Modal, Table } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { cartReducer, initialState } from '../../../components/cartReducers'
 import Itemstore from '../../../components/Itemstore'
+import TableArticulos from '../../../components/TableArticulos'
 
 const Menu = () => {
   const [state, dispatch] = useReducer(cartReducer, initialState)
@@ -32,7 +34,7 @@ const Menu = () => {
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Table>
+            <Table style={{textAlign:"center"}}>
             <thead>
               <th>#</th>
               <th>descripción</th>
@@ -41,22 +43,8 @@ const Menu = () => {
               <th>vr. unitario</th>
               <th>vr. total</th>
             </thead>
-            {cart.map((element) =>{ 
-              const {id, nombre, opciones} = element
-              let row = opciones.length
-            return(<>
-            <tr>
-              <td rowSpan={row+1}>{id}</td>
-              <td rowSpan={row+1}>{nombre}</td>
-            </tr>
-              {opciones.map((item)=><tr>
-              <td>{item.descripcion}</td>
-              <td>{item.amount}</td>
-              <td>{item.valor}</td>
-              <td>{item.valor * item.amount}</td>
-              </tr>)}
-            </>)}
-            )}
+            {cart.map( element => <TableArticulos data={element}/>)}
+
             </Table>
           </Modal.Body>
           <Modal.Footer>
@@ -64,7 +52,7 @@ const Menu = () => {
               Close
             </Button>
             <Button variant="primary" onClick={handleClose}>
-              Save Changes
+              <Link to="/checkout" state={{cart}}>Pagar</Link>
             </Button>
           </Modal.Footer>
         </Modal>

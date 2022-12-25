@@ -11,6 +11,7 @@ import Menu from './pages/servicios/restaurant/Menu';
 import Reservas from './pages/servicios/reservas/Reservas';
 import Inicio from './pages/servicios/restaurant/Inicio';
 import Contacto from './pages/Contacto';
+import Checkout from './pages/Checkout';
 
 
 function App() {
@@ -18,17 +19,18 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='glamping' element={<Glamping />}>
-          <Route path='reservas' element={<Reservas/>}/>
+          <Route path='reservas' element={<Reservas />} />
         </Route>
         <Route path='restaurante' element={<Restaurant />}>
-          <Route index element={<Inicio/>} />
-          <Route path='menu' element={<Menu/>}/>
+          <Route index element={<Inicio />} />
+          <Route path='menu' element={<Menu />} />
         </Route>
         <Route path="/" element={<Layout />}>
+          <Route path='checkout' element={<Checkout />} />
           <Route index element={<Home />} />
-          <Route path="nosotros" element={<AboutUs />}/>
-          <Route path='servicios' element={<Services />}/>
-          <Route path="contacto" element={<Contacto/>}/>
+          <Route path="nosotros" element={<AboutUs />} />
+          <Route path='servicios' element={<Services />} />
+          <Route path="contacto" element={<Contacto />} />
         </Route>
       </Routes>
 
