@@ -508,7 +508,16 @@ footer li {
   border-radius: 100%
 }
 
+.checkout{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  gap:1rem;
+  align-items: baseline;
+}
 @media screen and (max-width: 600px) {
+  .checkout{
+    grid-template-columns: 1fr;
+  }
   
   .platos {
     display: flex;
@@ -536,9 +545,6 @@ footer li {
     border-style: ridge;
     border-radius: 100%;
 
-  }
-
-  .container {
   }
 
   .block {

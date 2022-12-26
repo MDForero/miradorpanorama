@@ -7,7 +7,7 @@ const TableArticulos = ({ data }) => {
         <>
             <tr>
                 <td rowSpan={row + 1}>{id}</td>
-                <td rowSpan={row + 1}>{nombre}</td>
+                <td rowSpan={row + 1} style={{textAlign:'match-parent'}}>{nombre}</td>
             </tr>
             {opciones.map((item) => <tr>
                 <td>{item.descripcion}</td>
