@@ -50,12 +50,7 @@ const Menu = () => {
             </Table>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              <Link to="/checkout" state={{cart}}>Pagar</Link>
-            </Button>
+              <Link to="/checkout" className='btn btn-outline-danger' state={{cart}}>Pagar</Link>
           </Modal.Footer>
         </Modal>
       </>

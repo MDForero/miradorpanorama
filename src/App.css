@@ -509,10 +509,23 @@ footer li {
 }
 
 .checkout{
+  min-height: 70vh ;
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 3fr 2fr;
   gap:1rem;
   align-items: baseline;
+}
+.checkoutEmpty{
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem
+}
+.checkoutEmpty * {
+  margin: auto;
+}
+.destacamos{
+  margin: 50px auto;
 }
 @media screen and (max-width: 600px) {
   .checkout{
