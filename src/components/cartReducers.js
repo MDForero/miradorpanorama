@@ -3,7 +3,6 @@ import products from "../images/menu"
 export const initialState = {
     products,
     cart: [],
-    total: 0
 }
 export const cartReducer = (state, action) => {
     switch (action.type) {
@@ -21,11 +20,12 @@ export const cartReducer = (state, action) => {
         }
         case "delete_all": {
             return {
-                ...state, cart: [], total: 0
+                ...state, cart: [],
             }
         }
         case "delete_one": {
-
+            const {id} = action.payload
+            return {...state, cart: state.cart.filter(element => element.id !== id )}
         }
     }
 }

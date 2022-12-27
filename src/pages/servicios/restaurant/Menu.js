@@ -20,6 +20,8 @@ const Menu = () => {
   const addtocart = (data) => {
     dispatch({ type: "add_to_cart", payload: data })
   }
+  const delete_one = (data) => dispatch({type:"delete_one", payload: data}) 
+
   console.log(cart)
   return (
     <div>
@@ -43,7 +45,7 @@ const Menu = () => {
               <th>vr. unitario</th>
               <th>vr. total</th>
             </thead>
-            {cart.map( element => <TableArticulos data={element}/>)}
+            {cart.map( element => <TableArticulos data={element} eliminar={delete_one}/>)}
 
             </Table>
           </Modal.Body>
