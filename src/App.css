@@ -359,56 +359,12 @@ footer li {
 }
 .category{
   min-height: 60vh;
+  background: url("./images/categorias.jpg") no-repeat;
+  background-size: cover;
   background-position: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#especiales{
-  background: url("./images/categoriaEspeciales.png") no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-#especiales::after{
-  content: "especiales";
-  color: black;
-  font-size: 60px;
-  background-color: #a2cd46c0;
-}
-#patacones{
-  background: url("./images/categoriaPatacones.jpg") no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-#patacones::after{
-  content: "Patacones";
-  color: black;
-  font-size: 60px;
-  background-color: #a2cd46c0;
-}
-#sandiwch{
-  background: url("./images/categoriaSandiwch.png") no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-#sandiwch::after{
-  content: "Sandiwch";
-  color: black;
-  font-size: 60px;
-  background-color: #a2cd46c0;
-}
-#entradas{
-  background: url("./images/categoriaEntradas.jpg") no-repeat;
-  background-size: cover;
-  background-position: 50%;
- 
-}
-#entradas::after{
-  content: "Entradas";
-  color: black;
-  font-size: 60px;
-  background-color: #a2cd46c0;
-  border-radius: 10px;
 }
 
 .i {
@@ -497,6 +453,7 @@ footer li {
   position: fixed;
   bottom: 1%;
   right: 1%;
+  z-index: 1;
 }
 .cart div{
   color:aliceblue;

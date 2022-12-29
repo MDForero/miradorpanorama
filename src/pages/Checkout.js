@@ -43,7 +43,7 @@ const Checkout = () => {
         <div className='checkout' >
           <Card>
             <Card.Header><Card.Title>Información del pedido</Card.Title></Card.Header>
-            <Table bordered style={{ textAlign: "center", margin: "auto auto", alignSelf: "center", justifySelf: "right" }}>
+            <Table bordered responsive style={{ textAlign: "center", margin: "auto auto", alignSelf: "center", justifySelf: "right" }}>
               <thead>
                 <th></th>
                 <th>#</th>

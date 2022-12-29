@@ -16,6 +16,11 @@ const Home = () => {
           <img src={logo} alt="el Mirador panorama" width="40%"/>
         </div>
       </main>
+      <section>
+        {/* En proceso de actualización se esta buscando poner un menú de destacados */}
+        <h1>Lo más <strong>destacado</strong></h1>
+        <p>Contamos con una amplia variedad de platos, desde los favoritos de siempre a creaciones nuevas y mejoradas, entre los cuales destacan:</p>
+      </section>
       <section className='destacamos'>
         <h1 style={{textAlign:"center", fontSize:"3rem", margin:"20px auto"}}><strong>El mirador panorama es:</strong></h1>
         <div className='container-card'>

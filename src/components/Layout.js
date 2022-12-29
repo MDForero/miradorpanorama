@@ -7,26 +7,23 @@ const Layout = () => {
 
     return (
         <div>
-            <Navbar bg="dark" expand="lg">
+            <Navbar bg="dark" expand="lg" fixed='top'>
                 <Container>
                     <Navbar.Brand ><Link to="/">Mirador Panorama</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">
                             <NavLink className="nav-link" to="/">Inicio</NavLink>
-                            <NavDropdown menuVariant='dark' title="Servicios" id="basic-nav-dropdown">
-                                <Link to="glamping" className='dropdown-item'>Glamping</Link>
-                                <Link to="restaurante" className='dropdown-item'>Restaurante</Link>
-                            </NavDropdown>
+                            <NavLink className='nav-link' to="glamping" >Glamping</NavLink>
+                            <NavLink className='nav-link' to="menu" >Restaurante</NavLink>
                             <NavLink className="nav-link" to="nosotros">Nosotros</NavLink>
-                            <NavLink className="nav-link" to="servicios">Servicios</NavLink>
                             <NavLink className="nav-link" to="contacto">Contacto</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
             <Outlet />
-            <Footer/>
+            <Footer />
         </div>
     )
 }

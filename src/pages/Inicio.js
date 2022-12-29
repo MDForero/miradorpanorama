@@ -1,5 +1,5 @@
 import React from 'react'
-import patacones from "../../../images/Canastas de Patacones.jpg"
+import patacones from "../images/Canastas de Patacones.jpg"
 
 const Inicio = () => {
   return (

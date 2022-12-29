@@ -4,12 +4,8 @@ import './App.css';
 import Layout from './components/Layout';
 import AboutUs from './pages/Aboutus';
 import Home from './pages/Home';
-import Services from './pages/Services';
-import Glamping from './pages/servicios/Glamping';
-import Restaurant from './pages/servicios/Restaurant';
-import Menu from './pages/servicios/restaurant/Menu';
-import Reservas from './pages/servicios/reservas/Reservas';
-import Inicio from './pages/servicios/restaurant/Inicio';
+import Menu from './pages/Menu';
+import Inicio from './pages/Inicio';
 import Contacto from './pages/Contacto';
 import Checkout from './pages/Checkout';
 
@@ -18,18 +14,11 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='glamping' element={<Glamping />}>
-          <Route path='reservas' element={<Reservas />} />
-        </Route>
-        <Route path='restaurante' element={<Restaurant />}>
-          <Route index element={<Inicio />} />
-          <Route path='menu' element={<Menu />} />
-        </Route>
         <Route path="/" element={<Layout />}>
-          <Route path='checkout' element={<Checkout />} />
           <Route index element={<Home />} />
+          <Route path='menu' element={<Menu />} />
+          <Route path='checkout' element={<Checkout />} />
           <Route path="nosotros" element={<AboutUs />} />
-          <Route path='servicios' element={<Services />} />
           <Route path="contacto" element={<Contacto />} />
         </Route>
       </Routes>

@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useReducer, useState } from 'react'
 import { Button, Modal, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { cartReducer, initialState } from '../../../components/cartReducers'
-import Itemstore from '../../../components/Itemstore'
-import TableArticulos from '../../../components/TableArticulos'
+import { cartReducer, initialState } from '../components/cartReducers'
+import Itemstore from '../components/Itemstore'
+import TableArticulos from '../components/TableArticulos'
 
 const Menu = () => {
   const [state, dispatch] = useReducer(cartReducer, initialState)
-  const [menu, setMenu] = useState("")
+  const [menu, setMenu] = useState("entradas")
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -38,6 +38,7 @@ const Menu = () => {
           <Modal.Body>
             <Table style={{textAlign:"center"}}>
             <thead>
+              <th></th>
               <th>#</th>
               <th>descripción</th>
               <th>opcion</th>
@@ -55,15 +56,19 @@ const Menu = () => {
         </Modal>
       </>
       <section className=''>
-        <div className='category' id="sandiwch">
-        </div>
+        <main className='category'>
+          <h1 style={{textTransform:"capitalize"}}>{menu}</h1>
+        </main>
         <button className='btn btn-primary' onClick={() => setMenu("entradas")}>Entradas</button>
-        <button className='btn btn-primary' onClick={() => setMenu("patacones")}>Encocados</button>
+        <button className='btn btn-primary' onClick={() => setMenu("encocados")}>Encocados</button>
         <button className='btn btn-primary' onClick={() => setMenu("especiales")}>Especiales</button>
-        <button className='btn btn-primary' onClick={() => setMenu("")}>Todo</button>
+        <button className='btn btn-primary' onClick={() => setMenu("sandiwch")}>Sandiwch</button>
+        {/* <a href={menupdf} download="menu.pdf" className='btn btn-primary'>pdf</a> */}
+        <button className='btn btn-primary' onClick={() => setMenu("postres")}>Postres</button>
+        <button className='btn btn-primary' onClick={() => setMenu("bebidas")}>Bebidas</button>
 
         <div className="wrapper">
-          {products.map((element, index) => menu ? menu === element.categoria ? <Itemstore data={element} key={element.id} add={addtocart} /> : null : <Itemstore data={element} key={element.id} add={addtocart} />)}
+          {products.map((element, index) => menu === element.categoria ? <Itemstore data={element} key={element.id} add={addtocart} /> : null)}
         </div>
       </section>
     </div>
