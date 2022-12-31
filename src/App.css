@@ -1,11 +1,13 @@
 /* Nav */
-a{
+a {
   text-decoration: none;
 }
-.nav-link{
+
+.nav-link {
   color: white;
 }
-.active{
+
+.active {
   border-radius: 2px;
   background-color: white;
 
@@ -77,43 +79,51 @@ footer li {
   background-size: cover;
   height: 70vh;
 }
-#contact{
+
+#contact {
   height: 70vh;
   background: url("images/galeria/compressed__DSC8533.jpg") no-repeat;
   background-size: cover;
-  background-position-y:25% ;
+  background-position-y: 25%;
 }
-.grid-contact{
+
+.grid-contact {
   margin: 20px auto;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-around;
   gap: 20px;
 }
-.card-contact{
+
+.card-contact {
   margin: 0px auto;
   text-align: center;
-  color:black;
+  color: black;
   width: 200px;
   padding: 10px;
   border-radius: 10px;
 }
-.card-contact:nth-child(1){
+
+.card-contact:nth-child(1) {
   background-color: #ffcd2969;
-  border: solid #ffcc29; 
+  border: solid #ffcc29;
 }
-.card-contact:nth-child(2){
+
+.card-contact:nth-child(2) {
   background-color: #a2cd4675;
   border: solid #a3cd46;
 }
-.card-contact:nth-child(3){
+
+.card-contact:nth-child(3) {
   background-color: #ed323865;
   border: solid #ed3237;
 }
-.map{
+
+.map {
   width: 95%;
   margin: 20px auto
 }
+
 /* Sección central*/
 .center {
   display: flex;
@@ -210,10 +220,12 @@ footer li {
   justify-content: space-around;
   flex-direction: row-reverse;
 }
-.precios{
+
+.precios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
+
 .info {
   max-width: 600px;
   font-size: x-large;
@@ -269,19 +281,21 @@ footer li {
 .inline {
   display: inline-flex;
 }
-#galeria{
+
+#galeria {
   height: 500px;
   overflow: hidden;
   margin: 20px auto;
 }
-.item-menu{
+
+.item-menu {
   text-align: center;
   overflow: hidden;
   display: grid;
-  gap:1rem
+  gap: 1rem
 }
 
-.item-menu figure{
+.item-menu figure {
   border-radius: 100%;
   overflow: hidden;
   width: 23rem;
@@ -296,13 +310,61 @@ footer li {
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
-  grid-template-rows: min-content
+}
+
+.destacados {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.title-menu{
+  font-size: 4rem;
+  color: white;
+}
+.destacado {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  border-top: 10px;
+  border-radius: 10px;
+}
+
+.destacado:hover figure img {
+  scale: 1.5;
+  transition: 1.5s;
+}
+
+.destacadostext {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.49);
+  cursor: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destacadostext * {
+  margin: auto auto;
 }
 
 .container-card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)) ;
-  gap:10px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -335,6 +397,7 @@ footer li {
 .container-card .card:nth-child(3) .icon {
   background: #4aada9;
 }
+
 .container-card .card:nth-child(4) .icon {
   background: #8f3990;
 }
@@ -357,7 +420,8 @@ footer li {
   transition: 0.7s;
   color: #fff;
 }
-.category{
+
+.category {
   min-height: 60vh;
   background: url("./images/categorias.jpg") no-repeat;
   background-size: cover;
@@ -449,46 +513,52 @@ footer li {
   text-decoration: none;
   color: #414141;
 }
-.cart{
+
+.cart {
   position: fixed;
   bottom: 1%;
   right: 1%;
   z-index: 1;
 }
-.cart div{
-  color:aliceblue;
+
+.cart div {
+  color: aliceblue;
   position: absolute;
   right: 1%;
   top: -15%;
   background-color: red;
-  padding:0px 5px 0px 5px; 
+  padding: 0px 5px 0px 5px;
   border-radius: 100%
 }
 
-.checkout{
-  min-height: 70vh ;
+.checkout {
+  min-height: 70vh;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap:1rem;
+  gap: 1rem;
   align-items: baseline;
 }
-.checkoutEmpty{
+
+.checkoutEmpty {
   height: 70vh;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem
 }
+
 .checkoutEmpty * {
   margin: auto;
 }
-.destacamos{
+
+.destacamos {
   margin: 50px auto;
 }
+
 @media screen and (max-width: 600px) {
-  .checkout{
+  .checkout {
     grid-template-columns: 1fr;
   }
-  
+
   .platos {
     display: flex;
     flex-direction: column;

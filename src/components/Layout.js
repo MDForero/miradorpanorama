@@ -7,7 +7,7 @@ const Layout = () => {
 
     return (
         <div>
-            <Navbar bg="dark" expand="lg" fixed='top'>
+            <Navbar bg="dark" expand="lg" sticky='top'>
                 <Container>
                     <Navbar.Brand ><Link to="/">Mirador Panorama</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

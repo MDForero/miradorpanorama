@@ -20,7 +20,7 @@ const Menu = () => {
   const addtocart = (data) => {
     dispatch({ type: "add_to_cart", payload: data })
   }
-  const delete_one = (data) => dispatch({type:"delete_one", payload: data}) 
+  const delete_one = (data) => dispatch({ type: "delete_one", payload: data })
 
   console.log(cart)
   return (
@@ -28,7 +28,7 @@ const Menu = () => {
       <>
         <Button variant="primary" onClick={handleShow} className="cart">
           {cart.length ? <div>{cart.length}</div> : <></>}
-          <FontAwesomeIcon icon={faCartShopping} size="1x"/>
+          <FontAwesomeIcon icon={faCartShopping} size="1x" />
         </Button>
 
         <Modal show={show} onHide={handleClose} animation={false} centered>
@@ -36,36 +36,40 @@ const Menu = () => {
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Table style={{textAlign:"center"}}>
-            <thead>
-              <th></th>
-              <th>#</th>
-              <th>descripción</th>
-              <th>opcion</th>
-              <th>cantidad</th>
-              <th>vr. unitario</th>
-              <th>vr. total</th>
-            </thead>
-            {cart.map( element => <TableArticulos data={element} eliminar={delete_one}/>)}
+            <Table style={{ textAlign: "center" }}>
+              <thead>
+                <th></th>
+                <th>#</th>
+                <th>descripción</th>
+                <th>opcion</th>
+                <th>cantidad</th>
+                <th>vr. unitario</th>
+                <th>vr. total</th>
+              </thead>
+              {cart.map(element => <TableArticulos data={element} eliminar={delete_one} />)}
 
             </Table>
           </Modal.Body>
           <Modal.Footer>
-              <Link to="/checkout" className='btn btn-outline-danger' state={{cart}}>Pagar</Link>
+            <Link to="/checkout" className='btn btn-outline-danger' state={{ cart }}>Pagar</Link>
           </Modal.Footer>
         </Modal>
       </>
       <section className=''>
         <main className='category'>
-          <h1 style={{textTransform:"capitalize"}}>{menu}</h1>
+        <div style={{display:"inline-block"}}>
+          <h1 style={{ textTransform: "capitalize" }} className="title-menu">{menu}</h1>
+        </div>
         </main>
-        <button className='btn btn-primary' onClick={() => setMenu("entradas")}>Entradas</button>
-        <button className='btn btn-primary' onClick={() => setMenu("encocados")}>Encocados</button>
-        <button className='btn btn-primary' onClick={() => setMenu("especiales")}>Especiales</button>
-        <button className='btn btn-primary' onClick={() => setMenu("sandiwch")}>Sandiwch</button>
-        {/* <a href={menupdf} download="menu.pdf" className='btn btn-primary'>pdf</a> */}
-        <button className='btn btn-primary' onClick={() => setMenu("postres")}>Postres</button>
-        <button className='btn btn-primary' onClick={() => setMenu("bebidas")}>Bebidas</button>
+        <section className='botones'>
+          <button className='btn btn-primary w-100' onClick={() => setMenu("entradas")}><h2>Entradas</h2></button>
+          <button className='btn btn-success w-100' onClick={() => setMenu("encocados")}><h2>Encocados</h2></button>
+          <button className='btn btn-danger w-100' onClick={() => setMenu("especiales")}><h2>Especiales</h2></button>
+          <button className='btn btn-warning w-100' onClick={() => setMenu("sandiwch")}><h2>Sandiwch</h2></button>
+          {/* <a href={menupdf} download="menu.pdf" className='btn btn-primary2>pdf<h1>></</h1a> */}
+          <button className='btn btn-secondary w-100' onClick={() => setMenu("postres")}><h2>Postres</h2></button>
+          <button className='btn btn-info w-100' onClick={() => setMenu("bebidas")}><h2>Bebidas</h2></button>
+        </section>
 
         <div className="wrapper">
           {products.map((element, index) => menu === element.categoria ? <Itemstore data={element} key={element.id} add={addtocart} /> : null)}

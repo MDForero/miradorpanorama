@@ -8,6 +8,7 @@ import Menu from './pages/Menu';
 import Inicio from './pages/Inicio';
 import Contacto from './pages/Contacto';
 import Checkout from './pages/Checkout';
+import Glamping from './pages/Glamping';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='checkout' element={<Checkout />} />
           <Route path="nosotros" element={<AboutUs />} />
           <Route path="contacto" element={<Contacto />} />
+          <Route path="glamping" element={<Glamping/>}/>
         </Route>
       </Routes>
 

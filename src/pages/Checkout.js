@@ -24,7 +24,7 @@ const Checkout = () => {
   })
   const enviar = () => {
     const pedir = document.querySelector("#enviar")
-    let pedido = `https://api.whatsapp.com/send?phone=573212079857&text=Nombre:%0A%20%20${nombre.value}%0ADireccion:%0A%20%20${direccion.value}%0ATelefono:%0A%20%20${telefono.value}%0A`
+    let pedido = `https://api.whatsapp.com/send?phone=573202336531&text=Nombre:%0A%20%20${nombre.value}%0ADireccion:%0A%20%20${direccion.value}%0ATelefono:%0A%20%20${telefono.value}%0A`
     cart.forEach(element => {
       const { nombre, opciones } = element
       pedido += `${nombre}:%0A${element.opciones.map(item => `%20%20%20%20${item.descripcion}%20${item.amount}%20${item.amount * item.valor}`).join("%0A")}%0A`

@@ -7,22 +7,38 @@ import data from '../images/galeria/data'
 import logo from "../images/logo.png"
 import { faGlassCheers, faHotel, faMartiniGlass, faMountain, faPeopleGroup, faPlateWheat, faTent, faUtensils, faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import menu from '../images/menu'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
       <main className='preview' id='inicio'>
         <div>
-          <img src={logo} alt="el Mirador panorama" width="40%"/>
+          <img src={logo} alt="el Mirador panorama" width="40%" />
         </div>
       </main>
-      <section>
+      <section className='destacados'>
         {/* En proceso de actualización se esta buscando poner un menú de destacados */}
         <h1>Lo más <strong>destacado</strong></h1>
         <p>Contamos con una amplia variedad de platos, desde los favoritos de siempre a creaciones nuevas y mejoradas, entre los cuales destacan:</p>
+        <div className='wrapper'>
+          {menu.filter(element => element.destacados === true).map(element => <article className='destacado'>
+            <figure style={{ overflow: "hidden", minHeight: "23rem", width: "100%" }}>
+              <img src={element.img} alt='' width="100%" height="100%" style={{ objectFit: "cover", }} />
+            </figure>
+            <div className='destacadostext btn btn-outline-danger'>
+              <div>
+                <h2>{element.nombre}</h2>
+                <p>{element.descripcion}</p>
+              </div>
+              <Link className='btn btn-success' to="menu"> Ordenar</Link>
+            </div>
+          </article>)}
+        </div>
       </section>
       <section className='destacamos'>
-        <h1 style={{textAlign:"center", fontSize:"3rem", margin:"20px auto"}}><strong>El mirador panorama es:</strong></h1>
+        <h1 style={{ textAlign: "center", fontSize: "3rem", margin: "20px auto" }}><strong>El mirador panorama es:</strong></h1>
         <div className='container-card'>
           <div class="card">
             <div class="face face1">
@@ -41,8 +57,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
-         
+
+
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -64,7 +80,7 @@ const Home = () => {
             <div class="face face1">
               <div class="content">
                 <div class="icon">
-                  <span className="i"><FontAwesomeIcon icon={faPeopleGroup}  /></span>
+                  <span className="i"><FontAwesomeIcon icon={faPeopleGroup} /></span>
                 </div>
               </div>
             </div>
@@ -93,7 +109,7 @@ const Home = () => {
                 <p>Celebre todo tipo de ocasiones en nuestro establecimiento. Tenemos un ambiente agradable y acogedor. Estamos disponibles para fiestas, eventos corporativos, cumpleaños, aniversarios, compromisos y bodas.</p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -135,13 +151,13 @@ const Home = () => {
         <div>
           <div>
             <Carousel fade >
-              {data.map((element)=><Carousel.Item interval={2000}>
+              {data.map((element) => <Carousel.Item interval={2000}>
                 <img
                   className="d-block w-100"
                   src={element}
                   width="100%"
                   height="100%"
-                  style={{objectFit:"cover"}}
+                  style={{ objectFit: "cover" }}
                 />
               </Carousel.Item>)}
             </Carousel></div>

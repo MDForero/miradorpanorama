@@ -60,6 +60,7 @@ export default [
     {
         img: chunchulla,
         categoria: "entradas",
+        destacados:true,
         id: 3,
         nombre: "Chunchullo crocante",
         descripcion: "Chunchullo, papa criolla o patacones.",
@@ -83,6 +84,7 @@ export default [
     },
     {
         img: cerdo,
+        destacados:true,
         categoria: "sandiwch",
         id: 6,
         nombre: "Bondiola de cerdo",
@@ -382,6 +384,7 @@ export default [
         img: salchipapa,
         id: 27,
         nombre: "Salchipapa ",
+        destacados:true,
         categoria: "especiales",
         descripcion: "Pollo, tocineta, queso y maíz",
         valor: [
