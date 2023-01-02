@@ -87,6 +87,97 @@ footer li {
   background-position-y: 25%;
 }
 
+#glamping{
+  height: 70vh;
+  background: url("./images/glamping.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 50% ;
+}
+.glamping{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem ;
+  width: 95%;
+  margin: 20px auto;
+}
+.promociones{
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgb(229, 229, 229);
+  gap:3rem;
+  align-content: flex-start;
+}
+.paquetes{
+  margin: 0px auto;
+  padding: 0px 20px;
+  position: relative;
+  background-color: white;
+}
+.grid-gallery {
+  display: grid;
+  grid-auto-rows: 200px;
+  gap: 1rem;
+  grid-auto-flow: row dense;
+}
+
+@media all and (min-width: 320px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .grid-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+  grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+  grid-row: span 3;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.paquetes h3{
+  margin: 20px auto;
+  text-align: center;
+  font-family: cursive;
+}
+
 .grid-contact {
   margin: 20px auto;
   display: grid;
@@ -135,6 +226,10 @@ footer li {
 
 /* Nosotros */
 
+.centered{
+  margin: 0px auto;
+  display: table;
+}
 
 /* servicios */
 #servicios {
@@ -331,6 +426,7 @@ footer li {
   font-size: 4rem;
   color: white;
 }
+
 .destacado {
   position: relative;
   display: flex;
