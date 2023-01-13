@@ -2,7 +2,12 @@
 a {
   text-decoration: none;
 }
-
+h1, h2, h3, h4, h5, h6{
+  font-family: "Bakbak One", cursive;
+}
+.descripciones{
+  font-size: 1.5rem;
+}
 .nav-link {
   color: white;
 }
@@ -55,16 +60,36 @@ footer li {
 }
 
 #inicio {
-  background: url("images/188815862_1002804597133915_8165767116799593427_n.jpg") no-repeat;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: repeat(2, 70vh);
+  background: url("images/compressed__DSC8551.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  flex-direction: row;
+  min-height: 100vh;
+}
+#inicio section{ 
+  margin: 0px auto;
+  text-align: center;
+  
+}
+.ov-white{
+  background-color: rgba(255, 255, 255, 0.559);
 }
 
 #aboutus {
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: repeat(1, 90vh);
+  grid-template-columns: 100%;
   background: url("images/galeria/compressed__DSC8506.jpg") no-repeat;
-  background-position-y: center;
+  background-attachment: fixed;
   background-size: cover;
-  height: 70vh;
+  min-height: 100vh;
 }
 
 #services {
@@ -81,24 +106,40 @@ footer li {
 }
 
 #contact {
-  height: 70vh;
+  text-align: center;
   background: url("images/galeria/compressed__DSC8533.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  background-position-y: 25%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: repeat(1, 90vh);
+  min-height: 100vh;
+}
+#contact div{
+  margin: auto ;
 }
 
 #glamping{
-  height: 70vh;
-  background: url("./images/glamping.jpg") no-repeat;
+  display: grid;
+  grid-template-rows: repeat(2, 100vh);
+  background: url("./images/glamping.jpg") no-repeat fixed;
   background-size: cover;
   background-position-y: 50% ;
 }
-.glamping{
+.glampiremng{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem ;
+  grid-template-columns: 1fr;
+  min-height: 70vh;
+  align-content: center;
+  gap: 3rem ;
   width: 95%;
-  margin: 20px auto;
+}
+
+.glamping p{
+  max-width: 800px;
+  margin: 0px auto;
+  
 }
 .promociones{
   padding: 50px 0px;
@@ -179,15 +220,17 @@ footer li {
 }
 
 .grid-contact {
-  margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  
 }
 
 .card-contact {
-  margin: 0px auto;
+  margin: auto auto;
   text-align: center;
   color: black;
   width: 200px;
@@ -304,13 +347,13 @@ footer li {
 .platos {
   display: flex;
   min-height: 100vh;
-  background-color: #FFAE6D;
+  background-color: rgba(163, 159, 159, 0.8);
   justify-content: space-around;
   align-items: center;
 }
 
 .platos:nth-child(even) {
-  background-color: #E3C770;
+  background-color: rgba(163, 159, 159, 0.8);
   align-items: center;
   justify-content: space-around;
   flex-direction: row-reverse;

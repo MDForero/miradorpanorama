@@ -5,7 +5,6 @@ import Layout from './components/Layout';
 import AboutUs from './pages/Aboutus';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
-import Inicio from './pages/Inicio';
 import Contacto from './pages/Contacto';
 import Checkout from './pages/Checkout';
 import Glamping from './pages/Glamping';
