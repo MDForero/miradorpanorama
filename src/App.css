@@ -1,13 +1,30 @@
 /* Nav */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');  
+p{
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  white-space: break-spaces;
+  font-size: 1.8rem;
+}
 a {
   text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6{
+.bg-gray{
+  background-color: #4e4b4b
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bakbak One", cursive;
 }
-.descripciones{
+
+.descripciones {
   font-size: 1.5rem;
 }
+
 .nav-link {
   color: white;
 }
@@ -25,6 +42,10 @@ nav a {
   text-align: center;
   text-decoration: none;
   font-size: 17px;
+}
+
+.padding-10 {
+  padding: 10px 20px;
 }
 
 /* footer */
@@ -70,22 +91,35 @@ footer li {
   flex-direction: row;
   min-height: 100vh;
 }
-#inicio section{ 
+
+#inicio section {
   margin: 0px auto;
   text-align: center;
-  
+
 }
-.ov-white{
-  background-color: rgba(255, 255, 255, 0.559);
+
+.ov-white {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100%;
+}
+
+.grid-row-100hv {
+  display: grid;
+  grid-template-rows: repeat(3,80vh);
+  place-items: center;
+}
+
+.white {
+  color: white;
+}
+.margin-center{
+  margin: 0px auto
+}
+.mw-800{
+  max-width: 800px;
 }
 
 #aboutus {
-  text-align: center;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  grid-template-rows: repeat(1, 90vh);
-  grid-template-columns: 100%;
   background: url("images/galeria/compressed__DSC8506.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -116,45 +150,40 @@ footer li {
   grid-template-rows: repeat(1, 90vh);
   min-height: 100vh;
 }
-#contact div{
-  margin: auto ;
+
+#contact div {
+  margin: auto;
 }
 
-#glamping{
-  display: grid;
-  grid-template-rows: repeat(2, 100vh);
+#glamping {
   background: url("./images/glamping.jpg") no-repeat fixed;
   background-size: cover;
-  background-position-y: 50% ;
-}
-.glampiremng{
-  display: grid;
-  grid-template-columns: 1fr;
-  min-height: 70vh;
-  align-content: center;
-  gap: 3rem ;
-  width: 95%;
+  background-position-y: 50%;
 }
 
-.glamping p{
+
+.glamping p {
   max-width: 800px;
   margin: 0px auto;
-  
+
 }
-.promociones{
+
+.promociones {
   padding: 50px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: rgb(229, 229, 229);
-  gap:3rem;
+  gap: 3rem;
   align-content: flex-start;
 }
-.paquetes{
+
+.paquetes {
   margin: 0px auto;
   padding: 0px 20px;
   position: relative;
   background-color: white;
 }
+
 .grid-gallery {
   display: grid;
   grid-auto-rows: 200px;
@@ -204,16 +233,17 @@ footer li {
   grid-row: span 2;
 }
 
-.grid-gallery__item:nth-child(11n+9) {
+/* .grid-gallery__item:nth-child(11n+9) {
   grid-row: span 3;
-}
+} */
 
 .grid-gallery__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.paquetes h3{
+
+.paquetes h3 {
   margin: 20px auto;
   text-align: center;
   font-family: cursive;
@@ -226,7 +256,7 @@ footer li {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  
+
 }
 
 .card-contact {
@@ -269,7 +299,7 @@ footer li {
 
 /* Nosotros */
 
-.centered{
+.centered {
   margin: 0px auto;
   display: table;
 }
@@ -301,6 +331,9 @@ footer li {
   height: 100%;
   object-fit: cover;
   grid-area: img;
+}
+.black{
+  color:black
 }
 
 #glampingimg::after {
@@ -347,13 +380,11 @@ footer li {
 .platos {
   display: flex;
   min-height: 100vh;
-  background-color: rgba(163, 159, 159, 0.8);
   justify-content: space-around;
   align-items: center;
 }
 
 .platos:nth-child(even) {
-  background-color: rgba(163, 159, 159, 0.8);
   align-items: center;
   justify-content: space-around;
   flex-direction: row-reverse;
@@ -465,7 +496,8 @@ footer li {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
-.title-menu{
+
+.title-menu {
   font-size: 4rem;
   color: white;
 }
@@ -490,7 +522,8 @@ footer li {
   bottom: 15px;
   width: 100%;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.49);
+  color: white;
+  background-color: rgba(95, 95, 95, 0.8);
   cursor: auto;
   display: flex;
   justify-content: space-between;
@@ -502,7 +535,7 @@ footer li {
 
 .container-card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;
   justify-content: center;
   align-items: center;

@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap'
 import glamping from "../images/glampingintroduccion.jpg"
 import { Imagen } from './Modal'
 import logo from "../images/logo.png"
+import { imgs } from '../images/glamping/glamping'
 
 
 const Glamping = () => {
@@ -17,121 +18,28 @@ const Glamping = () => {
     return (
         <div>
             <main id="glamping">
-                <div className='preview'>
-                    <img src={logo} alt="el Mirador panorama" width="40%" />
+                <div className='ov-white grid-row-100hv'>
+                    <div className='preview'>
+                        <img src={logo} alt="el Mirador panorama" width="40%" />
+                    </div>
+                            <h1 className='animate__animated animate__pulse' style={{ textAlign: "center", textTransform:"uppercase", fontStyle:"italic", fontSize:"2.5rem"}}>Hospedarte con nosotros es una experiencia inolvidable</h1>
+                    <Container className='center'>
+                        <section className='padding-10'>
+                            <div>
+                                <p className='descripciones' style={{ textAlign: "justify", fontSize:"2.2rem" , maxWidth:"600px" }}>En nuestros ECOLOGING ofrecemos unservicio exclusivo y personalizado, brindando a nuestros visitantes una estadía en medio de la naturaleza, con un concepto único de glamping tipo safari, logrando generar experiencias únicas he inolvidables para aquellas personas que buscan escapar de la rutina de la ciudad y desean disfrutar de ambientes rodeados de montañas, bosques, ríos y un piedemonte llanero, además complementamos su estadía Con un servicios</p>
+                            </div>
+                        </section>
+                    </Container>
                 </div>
-                <Container className='glamping center'>
-                    <section className='ov-white'>
-                        <h1 style={{ textAlign: "center", margin: "20px" }}>Hospedarte con nosotros es una experiencia inolvidable</h1>
-                        <div>
-                            <p className='descripciones' style={{ textAlign: "justify" }}>Regrese a la naturaleza con estilo, mientras se aloja en el corazón de una bulliciosa ciudad. Nuestros glamping están situados entre los árboles cerca al río tua, con vistas al río y montañas. Con cómodas habitaciones, modernas instalaciones, nuestras suites hacen que sea fácil relajarse y disfrutar del mejor espectáculo de la naturaleza.</p>
-                        </div>
-                    </section>
-                </Container>
             </main>
-            <section style={{ backgroundColor: "rgb(229, 229, 229)", }}>
-                <h1 style={{ textAlign: "center", padding: "30px 0px 0px" }}>Planes y precios</h1>
-                <div className='promociones'>
-                    <article className="paquetes">
-                        <h3>Platinum</h3>
-                        <h1>200$</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <a className='btn btn-outline-danger centered' href="https://api.whatsapp.com/send?phone=573202336531&text=Estoy%20interesado%20en%20el%20paquete%20nombredelpaquete">Contactar</a>
-                    </article>
-                    <article className="paquetes">
-                        <h3>Gold</h3>
-                        <h1>200$</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <a className='btn btn-outline-danger centered' href="https://api.whatsapp.com/send?phone=573202336531&text=Estoy%20interesado%20en%20el%20paquete%20nombredelpaquete">Contactar</a>
-                    </article>
-                    <article className='paquetes'>
-                        <h3>Premium</h3>
-                        <h1>200$</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <a className='btn btn-outline-danger centered' href="https://api.whatsapp.com/send?phone=573202336531&text=Estoy%20interesado%20en%20el%20paquete%20nombredelpaquete">Contactar</a>
-                    </article>
-                </div>
-            </section>
-            <Container className='grid-gallery'>
+            <section  className='grid-gallery padding-10 bg-gray' >
                 <Imagen show={modalShow} onHide={() => setModalShow(false)} img={modalImg} />
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto", cursor: "pointer" }} onClick={() => prueba({ img: glamping })} />
-                </div>
+                {imgs.map(element => <>
+                    <div className='grid-gallery__item' href="#">
+                        <img src={element} className="grid-gallery__image" style={{ margin: "0px auto", cursor: "pointer" }} onClick={() => prueba({ img: element })} />
+                    </div></>)}
 
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-                <div className='grid-gallery__item' href="#">
-                    <img src={glamping} className="grid-gallery__image" style={{ margin: "0px auto" }} />
-                </div>
-
-            </Container>
+            </section>
         </div>
     )
 }
