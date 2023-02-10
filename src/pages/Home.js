@@ -15,14 +15,16 @@ const Home = () => {
 
   return (
     <div>
-      <main id='inicio' className='grid-row-100hv'>
-        <div className='preview'>
-          <img src={logo} alt="el Mirador panorama" width="40%" />
+      <main id='inicio' >
+        <div className='preview hv-100'>
+          <img src={logo} alt="el Mirador panorama" width="300px" />
         </div>
 
-        <section className='white mw-800 margin-center'>
-          <h1 style={{ fontSize: "3rem", textAlign: "center" }}><strong>Somos</strong></h1>
+        <section className='white mw-800 margin-center center hv-100'>
+          <div>
+          <h1><strong>Somos</strong></h1>
           <p className="descripciones ">El Mirador Panorama es un hotel, restaurante y albergue ecológico de montaña situado a la orilla del río. Desde aquí se puede disfrutar de las vistas más espectaculares sobre el río tua y sus alrededores, a vista de pájaro de Monterrey.</p>
+          </div>
         </section>
       </main>
 

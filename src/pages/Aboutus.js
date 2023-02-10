@@ -9,8 +9,8 @@ const AboutUs = () => {
       <main id="aboutus">
         <div className='ov-white'>
           <div>
-            <div style={{textAlign:"center"}}>
-              <img src={logo} alt="el Mirador panorama" width="40%" />
+            <div className="preview nosotros">
+              <img src={logo} alt="el Mirador panorama" width="300px" />
             </div>
             <section style={{ textAlign: "justify" }}>
 
