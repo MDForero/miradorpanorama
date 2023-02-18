@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Container, Nav, Navbar, NavbarBrand } from 'react-bootstrap'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
+import panorama from "../images/logo.png"
 import Footer from './Footer'
 
 const Layout = () => {
@@ -20,7 +21,7 @@ const Layout = () => {
     useEffect(() => {
         function handleScroll() {
             if (window.scrollY > 200) {
-                setNavbarColor('bg-dark navbar-dark');
+                setNavbarColor('navbar-dark bg-two');
             } else {
                 setNavbarColor("trasparente ")
             }
@@ -34,8 +35,9 @@ const Layout = () => {
 
     return (
         <div>
-            <Navbar expand="lg" expanded={collapsed} fixed='top'  className={navbarColor}>
+            <Navbar expand="lg" expanded={collapsed} className={navbarColor} fixed="top">
                 <Container>
+                    <NavbarBrand href='/'><img src={panorama} alt="logo panorama" height="80px "/></NavbarBrand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={()=> setCollapsed(!collapsed)}/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">

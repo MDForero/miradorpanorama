@@ -14,6 +14,15 @@ a {
 .bg-gray {
   background-color: #4e4b4b
 }
+.bg-one{
+  background-color: #8cbf3e;
+}
+.bg-two{
+  background-color: #1478aa;
+}
+.bg-three{
+  background-color: #f9a81b;
+}
 
 h1,
 h2,
@@ -96,6 +105,28 @@ footer li {
 }
 
 /*  inicio paginas principales */
+.navbar img{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+.logos{
+  max-width: 900px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: space-around;
+}
+.logos img{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.destacamos h1{
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto;
+}
+
 .preview {
   display: flex;
   justify-content: center;
@@ -507,11 +538,11 @@ footer li {
 
 
 .wrapper {
+  margin: 0px auto;
   width: 95%;
-  margin: 15px auto;
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,23rem), 1fr));
 }
 
 .destacados {
@@ -519,6 +550,7 @@ footer li {
   flex-direction: column;
   margin: 30px auto;
   align-items: center;
+  width: 100%;
 }
 
 .w-100 {
@@ -562,7 +594,7 @@ footer li {
   justify-content: space-between;
 }
 
-.destacadostext * {
+.destacadostext *{
   margin: auto auto;
 }
 

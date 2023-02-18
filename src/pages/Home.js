@@ -22,16 +22,17 @@ const Home = () => {
 
         <section className='white mw-800 margin-center center hv-100'>
           <div>
-          <h1><strong>Somos</strong></h1>
-          <p className="descripciones ">El Mirador Panorama es un hotel, restaurante y albergue ecológico de montaña situado a la orilla del río. Desde aquí se puede disfrutar de las vistas más espectaculares sobre el río tua y sus alrededores, a vista de pájaro de Monterrey.</p>
+            <h1><strong>Somos</strong></h1>
+            <p className="descripciones ">El Mirador Panorama es un hotel, restaurante y albergue ecológico de montaña situado a la orilla del río. Desde aquí se puede disfrutar de las vistas más espectaculares sobre el río tua y sus alrededores, a vista de pájaro de Monterrey.</p>
           </div>
         </section>
       </main>
 
       <section className='destacados'>
         {/* En proceso de actualización se esta buscando poner un menú de destacados */}
-        <h1>Lo más destacado</h1>
-        <p style={{ maxWidth: "900px" }} className="descripciones">Contamos con una amplia variedad de platos, desde los favoritos de siempre a creaciones nuevas y mejoradas, entre los cuales destacan:</p>
+        
+          <h1>Lo más destacado</h1>
+          <p style={{ maxWidth: "900px" }} className="descripciones">Contamos con una amplia variedad de platos, desde los favoritos de siempre a creaciones nuevas y mejoradas, entre los cuales destacan:</p>
         <div className='margin-center'>
           <div className='wrapper'>
             {menu.filter(element => element.destacados === true).map(element => <article className='destacado'>
@@ -50,7 +51,7 @@ const Home = () => {
         </div>
       </section>
       <section className='destacamos'>
-        <h1 style={{ textAlign: "center", fontSize: "3rem", margin: "20px auto" }}><strong>El mirador panorama es:</strong></h1>
+        <h1><strong>El mirador panorama es:</strong></h1>
         <div className='container-card'>
           <div class="card">
             <div class="face face1">
