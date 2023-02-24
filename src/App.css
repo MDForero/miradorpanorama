@@ -7,7 +7,7 @@ p {
   font-size: 1.8rem;
 }
 
-.w-400{
+.w-400 {
   max-width: 400px;
 }
 
@@ -18,13 +18,16 @@ a {
 .bg-gray {
   background-color: #4e4b4b
 }
-.bg-one{
+
+.bg-one {
   background-color: #8cbf3e;
 }
-.bg-two{
+
+.bg-two {
   background-color: #1478aa;
 }
-.bg-three{
+
+.bg-three {
   background-color: #f9a81b;
 }
 
@@ -96,6 +99,13 @@ footer li {
   list-style: none;
 }
 
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -103,29 +113,60 @@ footer li {
   align-items: center;
 }
 
+.flex-wrap-start {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .flex-wrap .card-contact {
   width: 200px;
   height: 200px;
 }
+.margin-center{
+  margin: auto auto;
+}
+
+.w-600{
+  max-width: 600px;
+}
+.icons-glamping > div{
+  width: 150px;
+}
+.icons-glamping > div div{
+  width: 50%;
+}
 
 /*  inicio paginas principales */
-.navbar img{
+.navbar img {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 100%;
 }
-.logos{
+
+.descripcion-glamping > section{
+  margin-bottom: 20px;
+}
+
+.descripcion-glamping h3{
+  text-align: center;
+}
+
+.logos {
   max-width: 900px;
   margin: 0px auto;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
 }
-.logos img{
+
+.logos img {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
 }
-.destacamos h1{
+
+.destacamos h1 {
   text-align: center;
   font-size: 3rem;
   margin: 20px auto;
@@ -222,7 +263,7 @@ footer li {
   background-position-y: 50%;
 }
 
-#glamping h1{
+#glamping h1 {
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
@@ -546,7 +587,7 @@ footer li {
   width: 95%;
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%,23rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));
 }
 
 .destacados {
@@ -560,7 +601,9 @@ footer li {
 .w-100 {
   width: 100%;
 }
-
+.mw-300{
+  max-width: 300px;
+}
 .botones {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -598,7 +641,7 @@ footer li {
   justify-content: space-between;
 }
 
-.destacadostext *{
+.destacadostext * {
   margin: auto auto;
 }
 

@@ -35,7 +35,7 @@ const Glamping = () => {
                     </Container>
                 </div>
             </div>
-            <Articulos/>
+            <Articulos/>        
             <section className='grid-gallery padding-10 bg-gray' >
                 <Imagen show={modalShow} onHide={() => setModalShow(false)} img={modalImg} />
                 {imgs.map(element => <>
