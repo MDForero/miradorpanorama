@@ -6,6 +6,7 @@ import glamping from "../images/glampingintroduccion.jpg"
 import { Imagen } from './Modal'
 import logo from "../images/logo.png"
 import { imgs } from '../images/glamping/glamping'
+import Articulos from '../components/Articulos'
 
 
 const Glamping = () => {
@@ -34,6 +35,7 @@ const Glamping = () => {
                     </Container>
                 </div>
             </div>
+            <Articulos/>
             <section className='grid-gallery padding-10 bg-gray' >
                 <Imagen show={modalShow} onHide={() => setModalShow(false)} img={modalImg} />
                 {imgs.map(element => <>
