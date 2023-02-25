@@ -1,6 +1,27 @@
 /* Nav */
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&display=swap');
 
+body{
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 1.3rem;
+
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.resaltar{
+  border: solid 5px;
+  overflow: hidden;
+}
+
+.option-img div:hover{
+  border: solid 3px;
+}
+
 p {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   white-space: break-spaces;
