@@ -30,7 +30,7 @@ const Articulos = () => {
 
                         <section className='flex-wrap margin-center'>
                             <p><strong>Valor noche:</strong>  350000 cop</p>
-                            <a className='btn btn-outline-success flex '><strong>Reserva ya </strong>  <FontAwesomeIcon icon={faWhatsapp} size="2x" /></a>
+                            <a href="http://wa.me/+573219251480" className='btn btn-outline-success flex '><strong>Reserva ya </strong>  <FontAwesomeIcon icon={faWhatsapp} size="2x" /></a>
                         </section>
                         <section>
                             <div className='icons-glamping flex-wrap'>

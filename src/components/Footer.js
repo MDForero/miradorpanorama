@@ -17,7 +17,7 @@ const Footer = () => {
                     <ul className="redes">
                         <li><a href='https://www.facebook.com/elmiradorpanorama' target="_blank" className='nav-link'><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
                         <li><a href='https://www.instagram.com/elmiradorpanorama/' target="_blank" className='nav-link'><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
-                        <li><a href='wa.me/+573219251480' className='nav-link' target="_blank"><FontAwesomeIcon icon={faWhatsapp} target="_blank" size="2x" /></a></li>
+                        <li><a href='https://wa.me/+573219251480/' className='nav-link' target="_blank"><FontAwesomeIcon icon={faWhatsapp} target="_blank" size="2x" /></a></li>
                     </ul>
                 </div>
                 <div>
