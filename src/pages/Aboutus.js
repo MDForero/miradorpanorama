@@ -12,7 +12,7 @@ const AboutUs = () => {
             <div className="preview nosotros">
               <img src={logo} alt="el Mirador panorama" width="300px" />
             </div>
-            <section style={{ textAlign: "justify" }}>
+            <section className='container' style={{ textAlign: "justify" }}>
 
               <article className="black platos">
                 <figure>

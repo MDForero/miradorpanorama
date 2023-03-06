@@ -42,10 +42,9 @@ const Articulos = () => {
                                 <div className='flex-wrap'><FontAwesomeIcon icon={faUserGroup} size="3x" color='#0D6EFD' /> Adultos 2 </div>
                             </div>
                         </section>
-                        <section className='flex-wrap-start'>
                             <section>
                                 <h3>La reserva incluye</h3>
-                                <ul>
+                                <ul className='list'>
                                     <li>Desayuno Vip</li>
                                     <li>Room services</li>
                                     <li>WiFi</li>
@@ -57,20 +56,9 @@ const Articulos = () => {
                                     <li>Canasta (vino, chocolates, pasabocas)</li>
                                 </ul>
                             </section>
-                            <section>
-                                <h3>Adicionales</h3>
-                                <ul>
-                                    <li>Cena romantica</li>
-                                    <li>Cena romantica</li>
-                                    <li>Pasadías</li>
-                                </ul>
-
-                            </section>
-
-                        </section>
                         <section>
                             <h3>Observaciones</h3>
-                            <li>Todo adicional se solicita por WhatsApp después de reservar la suite</li>
+                            <li>Todo adicional se solicita por WhatsApp después de reservar la suite. (Cena romantica, decoración, pasadías)</li>
                             <li>Cada huesped adicional tendrá un costó de 90.000 COP incluye desayuno, hasta un máximo de cuatro personas por suite</li>
                         </section>
                     </div>

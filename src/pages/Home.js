@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div>
-      <main id='inicio' >
+      <main className='inicio' >
         <div className='preview hv-100'>
           <img src={logo} alt="el Mirador panorama" width="300px" />
         </div>
@@ -50,9 +50,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='destacamos'>
+      <section className='destacamos inicio'>
         <h1><strong>El mirador panorama es:</strong></h1>
-        <div className='container-card'>
+        <div className='container-card container' >
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -72,23 +72,7 @@ const Home = () => {
           </div>
 
 
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <span className="i"><FontAwesomeIcon icon={faMountain} /></span>
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="" target="_blank">Lorem</a>
-                </h3>
-                <p style={{ fontSize: "1rem" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
+
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -123,23 +107,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <div class="icon">
-                  <span className="i"><FontAwesomeIcon icon={faMartiniGlass} /></span>
-                </div>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <h3>
-                  <a href="" target="_blank">Bebidas</a>
-                </h3>
-                <p style={{ fontSize: "1rem" }}>Disfruta de una deliciosa sangría viendo la puesta de sol sobre la cordillera oriental</p>
-              </div>
-            </div>
-          </div>
+
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -159,9 +127,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='center' id="galeria">
 
-        <div>
+      <section className='center' id="galeria">
+          <div>
           <div>
             <Carousel fade >
               {data.map((element) => <Carousel.Item interval={2000}>

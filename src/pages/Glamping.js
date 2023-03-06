@@ -29,7 +29,7 @@ const Glamping = () => {
                     <Container className='center'>
                         <section className='padding-10 hv-100 center'>
                             <div>
-                                <p className='descripciones' style={{ textAlign: "justify", fontSize: "2.2rem", maxWidth: "600px" }}>En nuestros ECOLOGING ofrecemos unservicio exclusivo y personalizado, brindando a nuestros visitantes una estadía en medio de la naturaleza, con un concepto único de glamping tipo safari, logrando generar experiencias únicas he inolvidables para aquellas personas que buscan escapar de la rutina de la ciudad y desean disfrutar de ambientes rodeados de montañas, bosques, ríos y un piedemonte llanero, además complementamos su estadía Con un servicios</p>
+                                <p>En nuestros ECOLOGING ofrecemos un servicio exclusivo y personalizado, brindando a nuestros visitantes una estadía en medio de la naturaleza, con un concepto de glamping tipo safari, logrando generar experiencias únicas he inolvidables para aquellas personas que buscan escapar de la rutina de la ciudad y desean disfrutar de ambientes rodeados de montañas, bosques, ríos y un piedemonte llanero, además complementamos su estadía con un servicio excepcional</p>
                             </div>
                         </section>
                     </Container>

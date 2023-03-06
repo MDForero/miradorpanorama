@@ -12,7 +12,7 @@ const Contacto = () => {
                     <img src={logo} alt="" width="300px" />
                 </div>
             </main>
-            <section className='flex-wrap'>
+            <section className='flex-wrap container'>
 
                 <a className='card-contact' href="tel:+573202336531">
                     <h4>Llamadas</h4>
