@@ -1,3 +1,4 @@
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useReducer, useState } from 'react'
@@ -6,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { cartReducer, initialState } from '../components/cartReducers'
 import Itemstore from '../components/Itemstore'
 import TableArticulos from '../components/TableArticulos'
+import menuPdf from "../images/menu.pdf"
 
 const Menu = () => {
   const [state, dispatch] = useReducer(cartReducer, initialState)
@@ -69,6 +71,11 @@ const Menu = () => {
           {/* <a href={menupdf} download="menu.pdf" className='btn btn-primary2>pdf<h1>></</h1a> */}
           <button className='btn btn-secondary w-100' onClick={() => setMenu("postres")}><h2>Postres</h2></button>
           <button className='btn btn-info w-100' onClick={() => setMenu("bebidas")}><h2>Bebidas</h2></button>
+        </section>
+        <section className='container'>
+          <div className='w-600 m-center'>
+          <a href={menuPdf} className="btn btn-danger btn-pdf " download style={{fontSize:"3rem"}}>Menú <FontAwesomeIcon icon={faFilePdf} size=""/></a>
+          </div>
         </section>
 
         <div className="wrapper">

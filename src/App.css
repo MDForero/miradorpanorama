@@ -156,6 +156,14 @@ footer li {
   margin: auto auto;
 }
 
+.btn-pdf{
+  width: 100%;
+}
+
+.m-center{
+  margin:0px auto;
+}
+
 .w-600{
   max-width: 600px;
 }

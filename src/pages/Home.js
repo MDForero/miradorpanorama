@@ -23,7 +23,7 @@ const Home = () => {
         <section className='white mw-800 margin-center center hv-100'>
           <div>
             <h1><strong>Somos</strong></h1>
-            <p className="descripciones ">El Mirador Panorama es un hotel, restaurante y albergue ecológico de montaña situado a la orilla del río. Desde aquí se puede disfrutar de las vistas más espectaculares sobre el río tua y sus alrededores, a vista de pájaro de Monterrey.</p>
+            <p className="descripciones">EL MIRADOR PANORAMA ES UN LUGAR PARA TODA LA FAMILIA, DONDE ENCONTRARÁS AREA DE RESTAURANTE, ZONA INFANTIL Y ALOJAMIENTO TIPO GLAMPING, DESDE AQUI  PODRAS CONTEMPLAR EL RIO Y TODO EL PIE DE MONTE LLANERO, ADEMAS OBSERVARAS LA BIODIVERSIDAD DE FLORA Y FAUNA QUE RODEA LA REGIÓN.</p>
           </div>
         </section>
       </main>
