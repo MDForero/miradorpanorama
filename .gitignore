@@ -4,11 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-
+*.jpg
+*.jpeg
+*.png
 # testing
 /coverage
 *.pdf
 
+.next
 # production
 /build
 
