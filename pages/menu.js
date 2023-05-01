@@ -1,31 +1,33 @@
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useReducer, useState } from 'react'
+import React, { useContext, useEffect, useReducer, useState } from 'react'
 import { Button, Modal, Table } from 'react-bootstrap'
-import { cartReducer, initialState } from '../components/cartReducers'
+import { Store, cartReducer, initialState } from '../components/cartReducers'
 import Itemstore from '../components/Itemstore'
 import TableArticulos from '../components/TableArticulos'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const Menu = () => {
-  const [state, dispatch] = useReducer(cartReducer, initialState)
+  const {state, dispatch} = useContext(Store)
   const [menu, setMenu] = useState("entradas")
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  let { products, cart, total } = state
+  const { products, cart} = state
 
   const addtocart = (data) => {
     dispatch({ type: "add_to_cart", payload: data })
   }
+
   const delete_one = (data) => dispatch({ type: "delete_one", payload: data })
 
-  console.log(cart)
+
   return (
     <Layout>
       <Head>
@@ -57,15 +59,15 @@ const Menu = () => {
             </Table>
           </Modal.Body>
           <Modal.Footer>
-            <Link href="/checkout" className='btn btn-outline-danger' >Pagar</Link>
+            <Link href="/checkout" pr >Pagar</Link>
           </Modal.Footer>
         </Modal>
       </>
       <section className=''>
         <main className='category'>
-        <div style={{display:"inline-block"}}>
-          <h1 style={{ textTransform: "capitalize" }} className="title-menu">{menu}</h1>
-        </div>
+          <div style={{ display: "inline-block" }}>
+            <h1 style={{ textTransform: "capitalize" }} className="title-menu">{menu}</h1>
+          </div>
         </main>
         <section className='botones'>
           <button className='btn btn-primary w-100' onClick={() => setMenu("entradas")}><h2>Entradas</h2></button>
@@ -78,7 +80,7 @@ const Menu = () => {
         </section>
         <section className='container'>
           <div className='w-600 m-center'>
-          <a href="/public/menu.pdf" className="btn btn-danger btn-pdf " download style={{fontSize:"3rem"}}>Menú <FontAwesomeIcon icon={faFilePdf} size=""/></a>
+            <a href="/public/menu.pdf" className="btn btn-danger btn-pdf " download style={{ fontSize: "3rem" }}>Menú <FontAwesomeIcon icon={faFilePdf} size="" /></a>
           </div>
         </section>
 
@@ -89,5 +91,6 @@ const Menu = () => {
     </Layout>
   )
 }
+
 
 export default Menu

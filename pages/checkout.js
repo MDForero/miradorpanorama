@@ -1,19 +1,19 @@
-import React, { useReducer } from 'react'
+import React, { useContext, useEffect, useReducer } from 'react'
 import { Card, Container, FloatingLabel, Form, Table } from 'react-bootstrap'
-import { cartReducer, initialState } from '../components/cartReducers'
+import { Store, cartReducer, initialState } from '../components/cartReducers'
 import TableArticulos from '../components/TableArticulos'
 import cartEmpty from "../public/cartEmpty.jpg"
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Checkout = () => {
-  
   let nombre, telefono, direccion
-  
-  const [state, dispatch] = useReducer(cartReducer, initialState)
-  let { cart } = state
 
+  const {state, dispatch} = useContext(Store)
+  const { cart } = state
+  console.log(cart)
   const delete_one = (data) => dispatch({ type: "delete_one", payload: data })
 
   let total = 0
@@ -32,12 +32,12 @@ const Checkout = () => {
     pedir.click()
   }
 
+  useEffect(() => {
+    console.log(JSON.parse(localStorage.getItem("myCart")))
+  }, [])
 
   return (
     <Layout>
-      <Head>
-        <title>Pagos</title>
-      </Head>
       {cart.length ? <Container>
         <h1 style={{ margin: "50px auto", textAlign: "center" }}>Carrito</h1>
 
@@ -71,7 +71,7 @@ const Checkout = () => {
                 <td> {total}</td>
               </tr>
             </Table>
-                  <Card.Header><Card.Title>Información de contacto</Card.Title></Card.Header>
+            <Card.Header><Card.Title>Información de contacto</Card.Title></Card.Header>
             <Card.Body><Form>
               <FloatingLabel
                 controlId="floatingInput"
@@ -89,7 +89,7 @@ const Checkout = () => {
             <button className='btn btn-outline-danger float-rght' style={{ float: "right" }} onClick={() => enviar()} ><strong>Hacer pedido</strong></button>
           </Card>
         </div>
-          
+
         {/* <Card >
             <Card.Header>
               <Card.Title>                        Información de contacto                        </Card.Title>
@@ -114,9 +114,9 @@ const Checkout = () => {
             </Card.Body>
           </Card> */}
       </Container> : <Container className="checkoutEmpty">
-          <h1>Carrito vació</h1>
-          <Image src={cartEmpty} alt=""/>
-          <Link href="/menu" className='btn btn-outline-success'><h1>Volver al menú</h1></Link>
+        <h1>Carrito vació</h1>
+        <Image src={cartEmpty} alt="" />
+        <Link href="/menu" className='btn btn-outline-success'><h1>Volver al menú</h1></Link>
       </Container>}
       <a id="enviar" target="_blank" href=""></a>
     </Layout>
