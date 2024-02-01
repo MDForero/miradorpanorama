@@ -1,39 +1,10 @@
-import nachos from "./nachos.jpg"
-import patacones from "./patacones.jpg"
-import chunchulla from "./chunchullo.jpg"
-import papas from "./criollas.jpg"
-import hamburguesitas from "./miniHamburguesas.jpg"
-import gourmet from "./sandiwchTurkey.jpg"
-import carne from "./sandiwchCarne.jpg"
-import ropaVieja from "./ropaVieja.jpg"
-import cerdo from "./sandiwchCarne.jpg"
-import turkey from "./sandiwchTurkey.jpg"
-import crispy from "./polloCrispy.jpg"
-import big from "./sausageSandiwch.jpg"
-import pataconesCamarones from "./pataconesCamarones.jpg"
-import pataconesMaiz from "./pataconesMaiz.jpg"
-import pataconesPollo from "./pataconesPollo.jpg"
-import pierna from "./piernaPernil.jpg"
-import picada from "./picada.jpg"
-import alitas from "./alitasBBq.jpg"
-import salchipapa from "./salchipapa.jpg"
-import perro from "./perroCaliente.jpg"
-import costillas from "./costillasBBQ.jpg"
-import coco from "./limonadaCoco.jpg"
-import frappe from "./frappeCafe.jpg"
-import malteadas from "./malteadas.jpg"
-import vinoblanco from "./vinoBlanco.jpg"
-import brownie from "./browneyHelado.jpg"
-import Banano from "./bananoQueso.jpg"
-import fresas from "./fresasConleche.jpg"
-import waffle from "./waffleHelado.jpg"
-import sangria from "./sangria.jpg"
+
 
 
 
 export default [
     {
-        img: nachos,
+        img: '/nachos.jpg',
         id: 1,
         nombre: "Nachos con carne",
         categoria: "entradas",
@@ -50,7 +21,7 @@ export default [
         ],
     },
     {
-        img: patacones,
+        img: '/patacones.jpg',
         categoria: "entradas",
         id: 2,
         nombre: "Patacones sencillos",
@@ -58,16 +29,16 @@ export default [
         valor: 8000
     },
     {
-        img: chunchulla,
+        img: '/chunchullo.jpg',
         categoria: "entradas",
-        destacados:true,
+        destacados: true,
         id: 3,
         nombre: "Chunchullo crocante",
         descripcion: "Chunchullo, papa criolla o patacones.",
         valor: 15000
     },
     {
-        img: papas,
+        img: '/criollas.jpg',
         categoria: "entradas",
         id: 4,
         nombre: "Papas criollas",
@@ -75,7 +46,7 @@ export default [
         valor: 12000
     },
     {
-        img: gourmet,
+        img: '/sandwichCarneAsada.jpg',
         categoria: "sandiwch",
         id: 5,
         nombre: "Sandwich Carne Asada",
@@ -83,8 +54,8 @@ export default [
         valor: 22000
     },
     {
-        img: cerdo,
-        destacados:true,
+        img: '/sandiwchCarne.jpg',
+        destacados: true,
         categoria: "sandiwch",
         id: 6,
         nombre: "Bondiola de cerdo",
@@ -92,7 +63,7 @@ export default [
         valor: 19000
     },
     {
-        img: turkey,
+        img: '/sandiwchChicken.jpg',
         categoria: "sandiwch",
         id: 7,
         nombre: "Pollo champiñones",
@@ -100,7 +71,7 @@ export default [
         valor: 19000
     },
     {
-        img: crispy,
+        img: '/polloCrispy.jpg',
         categoria: "sandiwch",
         id: 8,
         nombre: "Pollo crispy",
@@ -108,7 +79,7 @@ export default [
         valor: 20000
     },
     {
-        img: big,
+        img: '/sandiwchCarne.jpg',
         categoria: "sandiwch",
         id: 9,
         nombre: "Argentino",
@@ -116,7 +87,7 @@ export default [
         valor: 19000
     },
     {
-        img: carne,
+        img: '/sandiwchChicken.jpg',
         categoria: "sandiwch",
         id: 10,
         nombre: "Big",
@@ -124,7 +95,7 @@ export default [
         valor: 24000
     },
     {
-        img: ropaVieja,
+        img: '/ropaVieja.jpg',
         categoria: "sandiwch",
         id: 11,
         nombre: "Ropa vieja",
@@ -132,7 +103,7 @@ export default [
         valor: 19000
     },
     {
-        img: pataconesMaiz,
+        img: '/pataconesGeneral.jpg',
         id: 12,
         nombre: "Patacón mixto",
         categoria: "encocados",
@@ -149,7 +120,7 @@ export default [
         ],
     },
     {
-        img: pataconesPollo,
+        img: '/pataconesGeneral.jpg',
         id: 13,
         nombre: "Patacón de carne",
         categoria: "encocados",
@@ -166,7 +137,7 @@ export default [
         ],
     },
     {
-        img: pataconesCamarones,
+        img: '/pataconesGeneral.jpg',
         id: 14,
         nombre: "Patacón del huerto ",
         categoria: "encocados",
@@ -183,6 +154,8 @@ export default [
         ],
     },
     {
+
+        img: '/pataconesGeneral.jpg',
         id: 15,
         nombre: "Patacón ranchero",
         categoria: "encocados",
@@ -199,6 +172,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 16,
         nombre: "Patacón pollo BBQ",
         categoria: "encocados",
@@ -215,6 +189,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 17,
         nombre: "Patacón pollo champiñón",
         categoria: "encocados",
@@ -231,6 +206,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 18,
         nombre: "Patacón pollo miel",
         categoria: "encocados",
@@ -247,6 +223,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 19,
         nombre: "Patacón california",
         categoria: "encocados",
@@ -263,6 +240,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 20,
         nombre: "Patacón del campo",
         categoria: "encocados",
@@ -279,6 +257,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 21,
         nombre: "Patacón cerdo BBQ",
         categoria: "encocados",
@@ -295,6 +274,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 22,
         nombre: "Patacón Mexicano",
         categoria: "encocados",
@@ -311,6 +291,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 23,
         nombre: "Patacón cerdo agridulce",
         categoria: "encocados",
@@ -327,6 +308,7 @@ export default [
         ],
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 24,
         nombre: "Patacón de camarones",
         categoria: "encocados",
@@ -344,6 +326,7 @@ export default [
     },
 
     {
+        img: '/pataconesVeganos.jpg',
         id: 25,
         nombre: "Patacón vegetariano",
         categoria: "encocados",
@@ -360,7 +343,7 @@ export default [
         ],
     },
     {
-        img: alitas,
+        img: '/alitasBBq.jpg',
         id: 26,
         nombre: "Alitas BBQ-MIELMOSTAZA-HOT",
         categoria: "especiales",
@@ -381,10 +364,10 @@ export default [
         ],
     },
     {
-        img: salchipapa,
+        img: '/salchipapa.jpg',
         id: 27,
         nombre: "Salchipapa ",
-        destacados:true,
+        destacados: true,
         categoria: "especiales",
         descripcion: "Pollo, tocineta, queso y maíz",
         valor: [
@@ -403,7 +386,7 @@ export default [
         ],
     },
     {
-        img: costillas,
+        img: '/costillasBBQ.jpg',
         id: 28,
         nombre: "Costillas BBQ",
         categoria: "especiales",
@@ -424,7 +407,7 @@ export default [
         ],
     },
     {
-        img: pierna,
+        img: '/piernaPernil.jpg',
         id: 29,
         nombre: "Pierna pernil",
         categoria: "especiales",
@@ -432,7 +415,7 @@ export default [
         valor: 16000
     },
     {
-        img: perro,
+        img: '/perroCaliente.jpg',
         id: 30,
         nombre: "Choriperro",
         categoria: "especiales",
@@ -440,7 +423,7 @@ export default [
         valor: 16000
     },
     {
-        img: picada,
+        img: '/picada.jpg',
         id: 31,
         nombre: "Picada panorama",
         categoria: "especiales",
@@ -461,7 +444,7 @@ export default [
         ],
     },
     {
-        img: hamburguesitas,
+        img: '/miniHamburguesas.jpg',
         categoria: "entradas",
         id: 32,
         nombre: "Mini hamburguesas",
@@ -469,6 +452,7 @@ export default [
         valor: 15000
     },
     {
+        img: '/pataconesGeneral.jpg',
         id: 33,
         nombre: "Patacón tocineta y maíz",
         categoria: "encocados",
@@ -485,7 +469,7 @@ export default [
         ],
     },
     {
-        img: malteadas,
+        img: '/malteadas.jpg',
         id: 34,
         nombre: "Malteadas",
         categoria: "bebidas",
@@ -506,62 +490,64 @@ export default [
         ],
     },
     {
-        id:35,
-        img: brownie,
-        categoria:"postres",
-        nombre:"Brownie con helado",
-        valor:8000
+        id: 35,
+        img: '/browneyHelado.jpg',
+        categoria: "postres",
+        nombre: "Brownie con helado",
+        valor: 8000
     },
     {
-        id:36,
-        img:waffle,
-        categoria:"postres",
-        nombre:"Waffle con helado",
-        valor:8000
+        id: 36,
+        img: '/waffleHelado.jpg',
+        categoria: "postres",
+        nombre: "Waffle con helado",
+        valor: 8000
     },
     {
-        id:37,
-        img:Banano,
-        categoria:"postres",
-        nombre:"Banano asado con queso",
-        valor:8000
+        id: 37,
+        img: '/bananoQueso.jpg',
+        categoria: "postres",
+        nombre: "Banano asado con queso",
+        valor: 8000
     },
     {
-        id:38,
-        img:fresas,
-        categoria:"postres",
-        nombre:"Fresas con helado",
-        valor:7000
+        id: 38,
+        img: '/fresasConleche.jpg',
+        categoria: "postres",
+        nombre: "Fresas con helado",
+        valor: 7000
     },
     {
-        id:39,
-        img:vinoblanco,
-        categoria:"bebidas",
-        nombre:"Vino blanco",
-        valor:8000
+        id: 39,
+        img: '/vinoBlanco.jpg',
+        categoria: "bebidas",
+        nombre: "Vino blanco",
+        valor: 8000
     },
     {
-        id:40,
-        img:sangria,
-        categoria:"bebidas",
-        nombre:"Sangría",
-        valor:8000
+        id: 40,
+        img: '/sangria.jpg',
+        categoria: "bebidas",
+        nombre: "Sangría",
+        valor: 8000
     },
     {
-        id:41,
-        img:coco,
-        categoria:"bebidas",
-        nombre:"Limonada de coco",
-        valor:7000
+        id: 41,
+        img: '/limonadaCoco.jpg',
+        categoria: "bebidas",
+        nombre: "Limonada de coco",
+        valor: 7000
     },
     {
-        id:42,
-        img:frappe,
-        categoria:"bebidas",
-        nombre:"Limonada de coco",
-        valor:8000
+        img: '/limonadaCoco.jpg',
+        id: 42,
+        img: '/corazon.jpg',
+        categoria: "bebidas",
+        nombre: "Limonada de coco",
+        valor: 8000
     },
     {
+        img: '/limonadaCoco.jpg',
         
         id: 43,
         nombre: "Micheladas",
@@ -588,11 +574,12 @@ export default [
                 descripcion: "Club Colombia",
                 value: 5000
             },
-
+            
         ],
     },
     {
         
+        img: '/limonadaCoco.jpg',
         id: 44,
         nombre: "Jugos naturales",
         categoria: "bebidas",
